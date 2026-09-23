@@ -1,30 +1,177 @@
 {
   "schemaVersion": 1,
-  "defaultPair": ["office-v2", "pipeline-erp4-v1"],
+  "defaultPair": [
+    "office2-gt",
+    "pipeline-erp4-v1"
+  ],
   "scenes": [
     {
-      "id":"office-v2", "title":"单张全景 · Office V2", "method":"单图场景重建",
-      "summary":"1 张 ERP / 20 个语义资产 / 原有展示结果",
-      "description":"原有办公室场景，包含房间结构、家具与桌面物品。可剖开房间观察布局，或进入室内行走。",
-      "notes":["根据假定相机高度推算的名义尺度，非实测尺寸。"],
-      "unitLabel":"名义米", "walk":true,
-      "files":[{"url":"scenes/office-v2/scene.glb"}],
-      "cutaway":["ceiling","wall_x0","wall_y0","ceiling_fixtures"],
-      "views":{"meeting":{"position":[0.6,1.65,-3.35],"target":[2,0.9,-1.7]},"lounge":{"position":[2.386,1.65,-3.534],"target":[0.8,0.8,-5.25]}},
-      "labels":{"room":"房间结构","meeting_table":"会议桌","coffee_table":"茶几","sofa_l":"L 形沙发","chair_B01":"会议椅 01","chair_B02":"会议椅 02","chair_B03":"会议椅 03","chair_B04":"会议椅 04","av_display":"显示设备","wall_clock":"挂钟","door_unit":"门组","wall_notices":"墙面告示","ceiling_fixtures":"顶棚设施","storage_bench":"储物长凳","side_table":"边几","meeting_props":"会议桌物品","coffee_props":"茶几物品","side_props":"边几物品","waste_bin":"垃圾桶","lounge_chair":"休闲椅"},
-      "inputDescription":"原有单张全景重建结果的输入图。来源批次：20260911T032046192242Z。",
-      "sources":[{"url":"scenes/office-v2/source.png","label":"单张输入 ERP"}]
+      "id": "office-v2",
+      "title": "单张全景 · Office V2",
+      "method": "单图场景重建",
+      "summary": "1 张 ERP / 20 个语义资产 / 原有展示结果",
+      "description": "原有办公室场景，包含房间结构、家具与桌面物品。可剖开房间观察布局，或进入室内行走。",
+      "notes": [
+        "根据假定相机高度推算的名义尺度，非实测尺寸。"
+      ],
+      "unitLabel": "名义米",
+      "walk": true,
+      "files": [
+        {
+          "url": "scenes/office-v2/scene.glb"
+        }
+      ],
+      "cutaway": [
+        "ceiling",
+        "wall_x0",
+        "wall_y0",
+        "ceiling_fixtures"
+      ],
+      "views": {
+        "meeting": {
+          "position": [
+            0.6,
+            1.65,
+            -3.35
+          ],
+          "target": [
+            2,
+            0.9,
+            -1.7
+          ]
+        },
+        "lounge": {
+          "position": [
+            2.386,
+            1.65,
+            -3.534
+          ],
+          "target": [
+            0.8,
+            0.8,
+            -5.25
+          ]
+        }
+      },
+      "labels": {
+        "room": "房间结构",
+        "meeting_table": "会议桌",
+        "coffee_table": "茶几",
+        "sofa_l": "L 形沙发",
+        "chair_B01": "会议椅 01",
+        "chair_B02": "会议椅 02",
+        "chair_B03": "会议椅 03",
+        "chair_B04": "会议椅 04",
+        "av_display": "显示设备",
+        "wall_clock": "挂钟",
+        "door_unit": "门组",
+        "wall_notices": "墙面告示",
+        "ceiling_fixtures": "顶棚设施",
+        "storage_bench": "储物长凳",
+        "side_table": "边几",
+        "meeting_props": "会议桌物品",
+        "coffee_props": "茶几物品",
+        "side_props": "边几物品",
+        "waste_bin": "垃圾桶",
+        "lounge_chair": "休闲椅"
+      },
+      "inputDescription": "原有单张全景重建结果的输入图。来源批次：20260911T032046192242Z。",
+      "sources": [
+        {
+          "url": "scenes/office-v2/source.png",
+          "label": "单张输入 ERP"
+        }
+      ]
     },
     {
-      "id":"pipeline-erp4-v1", "title":"我的 Pipeline · 4 帧 ERP", "method":"多帧输入 / V1",
-      "summary":"4 张 ERP / 23 个独立物体 / 待改进结果",
-      "description":"first_full_scene_agent_v1 的原始场景布局。网页使用保留顶点颜色的轻量模型，保留物体编号，支持逐个检查。",
-      "notes":["已知问题：碰撞未完全消解，门尚未合理放置。","选中框为 Boxer 初始化时的有向包围盒；后续放置调整可能使模型与初始框存在偏差。","此批次仅含物体；辅助网格不代表重建的房间结构。","网页副本已减面；物体摆放未调整，不能代替原始网格做定量评估。","保留源坐标单位，米制比例尚未核实。"],
-      "unitLabel":"源坐标单位", "walk":false,
-      "assetManifest":"scenes/pipeline-erp4-v1/conversion-report.json",
-      "selectionBounds":"boxer-init",
-      "inputDescription":"用户确认：office2_4 中的这 4 张 ERP 是 first_full_scene_agent_v1 的输入。",
-      "sources":[{"url":"scenes/pipeline-erp4-v1/32_rgb.png","label":"ERP / 帧 32"},{"url":"scenes/pipeline-erp4-v1/66_rgb.png","label":"ERP / 帧 66"},{"url":"scenes/pipeline-erp4-v1/85_rgb.png","label":"ERP / 帧 85"},{"url":"scenes/pipeline-erp4-v1/97_rgb.png","label":"ERP / 帧 97"}]
+      "id": "pipeline-erp4-v1",
+      "title": "我的 Pipeline · 4 帧 ERP",
+      "method": "多帧输入 / V1",
+      "summary": "4 张 ERP / 23 个独立物体 / 待改进结果",
+      "description": "first_full_scene_agent_v1 的原始场景布局。网页使用保留顶点颜色的轻量模型，保留物体编号，支持逐个检查。",
+      "notes": [
+        "已知问题：碰撞未完全消解，门尚未合理放置。",
+        "选中框为 Boxer 初始化时的有向包围盒；后续放置调整可能使模型与初始框存在偏差。",
+        "此批次仅含物体；辅助网格不代表重建的房间结构。",
+        "网页副本已减面；物体摆放未调整，不能代替原始网格做定量评估。",
+        "保留源坐标单位，米制比例尚未核实。"
+      ],
+      "unitLabel": "源坐标单位",
+      "walk": false,
+      "assetManifest": "scenes/pipeline-erp4-v1/conversion-report.json",
+      "selectionBounds": "boxer-init",
+      "inputDescription": "用户确认：office2_4 中的这 4 张 ERP 是 first_full_scene_agent_v1 的输入。",
+      "sources": [
+        {
+          "url": "scenes/pipeline-erp4-v1/32_rgb.png",
+          "label": "ERP / 帧 32"
+        },
+        {
+          "url": "scenes/pipeline-erp4-v1/66_rgb.png",
+          "label": "ERP / 帧 66"
+        },
+        {
+          "url": "scenes/pipeline-erp4-v1/85_rgb.png",
+          "label": "ERP / 帧 85"
+        },
+        {
+          "url": "scenes/pipeline-erp4-v1/97_rgb.png",
+          "label": "ERP / 帧 97"
+        }
+      ]
+    },
+    {
+      "id": "office2-gt",
+      "title": "Office2 · GT",
+      "method": "ReplicaPano / Ground Truth",
+      "summary": "完整彩色 GT / 原始米制尺度 / 房间与家具",
+      "description": "office_2_000 的完整 GT 彩色网格，包含房间结构与家具。保留原始几何与顶点颜色，支持剖开房间及自由漫游。",
+      "notes": [
+        "默认隐藏顶棚与两面近侧墙，便于观察内部；关闭“剖开房间”可恢复完整 GT。",
+        "列表中的 7 项为几何显示分区，不是 GT 物体实例标注。",
+        "GT 保留米制尺度；与 Pipeline 尚未完成坐标及尺度配准。"
+      ],
+      "unitLabel": "米",
+      "walk": false,
+      "assetNoun": "网格分区",
+      "files": [
+        {
+          "url": "scenes/office2-gt/scene.glb"
+        }
+      ],
+      "cutaway": [
+        "gt_ceiling",
+        "gt_wall_x_min",
+        "gt_wall_y_min"
+      ],
+      "labels": {
+        "gt_contents": "室内主体（含家具）",
+        "gt_floor": "地面区域",
+        "gt_wall_x_min": "侧墙区域 X−",
+        "gt_wall_x_max": "侧墙区域 X+",
+        "gt_wall_y_min": "侧墙区域 Y−",
+        "gt_wall_y_max": "侧墙区域 Y+",
+        "gt_ceiling": "顶棚区域"
+      },
+      "inputDescription": "同一 office_2_000 场景的 GT 全景图；帧 32、66、85、97，与 Pipeline 输入文件的 SHA256 一致。",
+      "sources": [
+        {
+          "url": "scenes/pipeline-erp4-v1/32_rgb.png",
+          "label": "ERP / 帧 32"
+        },
+        {
+          "url": "scenes/pipeline-erp4-v1/66_rgb.png",
+          "label": "ERP / 帧 66"
+        },
+        {
+          "url": "scenes/pipeline-erp4-v1/85_rgb.png",
+          "label": "ERP / 帧 85"
+        },
+        {
+          "url": "scenes/pipeline-erp4-v1/97_rgb.png",
+          "label": "ERP / 帧 97"
+        }
+      ]
     }
   ]
 }

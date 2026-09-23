@@ -27,7 +27,7 @@ export function validateSelectionBoundsReport(config, report) {
 // their existing cache URLs, so updating metadata does not re-download meshes.
 export function sceneDataURL(path) {
   const url = new URL(path, document.baseURI);
-  url.searchParams.set('v', 'boxer-obb-2');
+  url.searchParams.set('v', 'office2-gt-1');
   return url;
 }
 

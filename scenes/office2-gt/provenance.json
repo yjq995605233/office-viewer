@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "office_2_000",
+  "sourceFile": "office_2_aligned.ply",
+  "sourceSHA256": "6930d3d02c326d391ab7ee6b0ef848495e521eab23885c1a002046121351ef86",
+  "sourceBytes": 37766479,
+  "vertices": 858623,
+  "sourceQuads": 857845,
+  "triangles": 1715690,
+  "previewBytes": 51785480,
+  "previewSHA256": "5c057c6f46f6225d6cc888b5d44f159fad4c0f879bb533dd4c0ae9950c83c3e0",
+  "units": "meters",
+  "sourceUpAxis": "+Z",
+  "viewerUpAxis": "+Y",
+  "sourceToViewer": [
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      -1.0,
+      0.0
+    ]
+  ],
+  "simplification": "none",
+  "colorConversion": "sRGB uint8 to linear float32; unlit vertex-color material",
+  "partition": "Geometric shell bands for reversible cutaway; not GT instance labels.",
+  "partitionBandsMeters": {
+    "floor": 0.06,
+    "ceiling": 0.17,
+    "wallXMin": 0.1,
+    "wallXMax": 0.1,
+    "wallYMin": 0.14,
+    "wallYMax": 0.1
+  },
+  "parts": [
+    {
+      "id": "gt_contents",
+      "label": "室内主体（含家具）",
+      "vertices": 216813,
+      "quads": 214898,
+      "triangles": 429796
+    },
+    {
+      "id": "gt_floor",
+      "label": "地面区域",
+      "vertices": 146776,
+      "quads": 144883,
+      "triangles": 289766
+    },
+    {
+      "id": "gt_wall_x_min",
+      "label": "侧墙区域 X−",
+      "vertices": 59690,
+      "quads": 59184,
+      "triangles": 118368
+    },
+    {
+      "id": "gt_wall_x_max",
+      "label": "侧墙区域 X+",
+      "vertices": 60904,
+      "quads": 60244,
+      "triangles": 120488
+    },
+    {
+      "id": "gt_wall_y_min",
+      "label": "侧墙区域 Y−",
+      "vertices": 94289,
+      "quads": 92848,
+      "triangles": 185696
+    },
+    {
+      "id": "gt_wall_y_max",
+      "label": "侧墙区域 Y+",
+      "vertices": 103944,
+      "quads": 102691,
+      "triangles": 205382
+    },
+    {
+      "id": "gt_ceiling",
+      "label": "顶棚区域",
+      "vertices": 183984,
+      "quads": 183097,
+      "triangles": 366194
+    }
+  ],
+  "bounds": {
+    "min": [
+      -3.944398880004883,
+      -0.012754378840327263,
+      -1.8843964338302612
+    ],
+    "max": [
+      3.280071496963501,
+      2.75852108001709,
+      2.079263925552368
+    ]
+  },
+  "pipelineRegistration": "Not applied. Native GT metric coordinates are retained."
+}

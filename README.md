@@ -4,6 +4,7 @@
 
 ## 当前结果
 
+- Office2 · GT：ReplicaPano `office_2_000` 完整彩色网格，原始米制尺度；默认与 Pipeline 并排显示。
 - 单张全景 Office V2：原有场景，20 个语义资产，名义米制尺寸。
 - 我的 Pipeline / 4 帧 ERP：来自 first_full_scene_agent_v1，23 个独立物体；输入为 office2_4 的 32、66、85、97 帧。
 - 新结果仍存在物体穿插与门放置不合理的问题，按原布局展示。该批次没有房间壳体；网格是观察辅助。
@@ -21,11 +22,26 @@
 
 ## 数据说明
 
-两个结果未完成坐标与尺度配准。联动视角仅按各自场景大小同步观察方向和相对位置，不表示像素或几何对齐。
+各结果未完成坐标与尺度配准。联动视角仅按各自场景大小同步观察方向和相对位置，不表示像素或几何对齐。
 
 新结果由约 1277 万三角面减至约 115 万面，OBJ 约 688 MiB 转为 GLB 约 33 MiB。保留原始世界坐标、实例编号与顶点颜色，重新计算法线。各物体的转换记录见 scenes/pipeline-erp4-v1/conversion-report.json。网页轻量副本用于目视检查，定量评估应使用原始网格。
 
 此仓库包含构建后的网页和展示资源，不包含原始 OBJ、Blender 工程或重建 pipeline。公开访问不代表另行授予场景数据和输入图片的再利用许可。
+
+### Office2 GT
+
+GT 来自 `RplicaPano/office_2_000/office_2_000/office_2_aligned.ply`，包含完整房间与家具；没有使用 `Object_Mesh` 中的低面数物体代理替代扫描网格。858,623 个源顶点和 857,845 个四边形保留，四边形拆成 1,715,690 个三角形，不减面。仅将 Z-up 米制坐标旋转为 Y-up：`(x, y, z) → (x, z, -y)`。颜色从 sRGB 转为线性顶点色，使用无光照材质显示原始颜色。
+
+为支持可逆剖切，按房间边界的窄空间带分为地面、四面侧墙、顶棚和室内主体共 7 个显示区域。它们不是语义实例标签；所有源面恰好分配一次，关闭剖切可恢复全部几何。默认隐藏顶棚、X− 侧墙和源坐标 Y− 侧墙；原始尺度和布局不变。GT 尚未与 Pipeline 配准，不提供实例一一对应或定量误差评估。
+
+转换记录及哈希见 `scenes/office2-gt/provenance.json`。已有四帧输入图与 GT 对应帧文件的 SHA256 一致，因此复用图片资源。
+
+```bash
+python -m pip install numpy plyfile
+python scripts/export_office2_gt.py \
+  --source /path/to/office_2_aligned.ply \
+  --output scenes/office2-gt
+```
 
 ### Boxer 初始化包围盒
 

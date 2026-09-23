@@ -1,12 +1,12 @@
 <!doctype html>
 <html lang="zh-CN">
-<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="办公室三维场景结果对比：不同重建方法的结果、输入全景与物体检查。"><meta name="theme-color" content="#141a20"><title>Scene Study · 办公室结果对比</title>  <script type="module" crossorigin src="./assets/index-4a833276.js"></script>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="办公室三维场景结果对比：不同重建方法的结果、输入全景与物体检查。"><meta name="theme-color" content="#141a20"><title>Scene Study · 办公室结果对比</title>  <script type="module" crossorigin src="./assets/index-854ccfcb.js"></script>
   <link rel="stylesheet" crossorigin href="./assets/index-D1fLQJiz.css">
 </head>
 <body>
   <div id="app">
     <header class="topbar"><a class="brand" href="./"><span class="brand-icon">◈</span><span>SCENE STUDY<small>三维场景研究档案</small></span></a><span class="top-caption">OFFICE / COMPARISON LAB</span><a class="repo-link" href="https://github.com/yjq995605233/office-viewer" target="_blank" rel="noopener">GitHub ↗</a></header>
-    <section class="intro"><div><p class="eyebrow">从输入，到空间</p><h1>办公室 · 结果对比</h1><p>并排观察不同方法的重建结果，回到输入图，检查每一个物体。</p></div><div class="archive-count"><strong id="scene-count">02</strong><span>场景结果<br>持续收录中</span></div></section>
+    <section class="intro"><div><p class="eyebrow">从输入，到空间</p><h1>办公室 · 结果对比</h1><p>并排观察不同方法的重建结果，回到输入图，检查每一个物体。</p></div><div class="archive-count"><strong id="scene-count">03</strong><span>场景结果<br>持续收录中</span></div></section>
     <div class="toolbar"><div class="segmented"><button id="compare-mode" class="active" aria-pressed="true">左右对比</button><button id="single-mode" aria-pressed="false">单场景查看</button></div><label class="link-toggle"><input id="link-cameras" type="checkbox">联动视角</label><span id="comparison-note">独立视角 · 未做坐标与尺度配准</span><button id="reset-both" class="quiet">重置视角 ↺</button></div>
     <main class="workbench"><div id="panels" class="panels"></div><aside class="inspector" aria-label="当前场景与物体检查">
       <div class="inspector-heading"><h2>场景检查</h2><div class="panel-tabs"><button data-inspect="0" class="active" aria-label="检查 A 侧">A</button><button data-inspect="1" aria-label="检查 B 侧">B</button></div></div>
@@ -14,7 +14,7 @@
         <div class="display-options"><label><input id="show-grid" type="checkbox" checked>辅助网格</label><label><input id="show-axes" type="checkbox">世界坐标轴</label><label><input id="wireframe" type="checkbox">线框</label><label id="cutaway-option"><input id="cutaway" type="checkbox">剖开房间</label></div>
         <p class="small-note">网格是观察辅助；X 红 · Y 绿（向上）· Z 蓝。</p>
         <section class="selection" id="selection"><span class="eyebrow">选中物体</span><h4 id="selection-name">点击模型或下方列表</h4><code id="selection-id"></code><p id="selection-size"></p><div><button id="focus-object" disabled>聚焦</button><button id="hide-object" disabled>隐藏</button></div></section>
-        <div class="asset-heading"><h3>物体列表 <span id="asset-count"></span></h3><button id="restore-all" class="text-button">全部显示</button></div><label class="search-label"><span class="sr-only">搜索物体名称或编号</span><input type="search" id="asset-search" placeholder="搜索物体名称 / 编号"></label><div id="asset-list" class="asset-list"></div>
+        <div class="asset-heading"><h3><span id="asset-list-label">物体列表</span> <span id="asset-count"></span></h3><button id="restore-all" class="text-button">全部显示</button></div><label class="search-label"><span class="sr-only">搜索物体名称或编号</span><input type="search" id="asset-search" placeholder="搜索物体名称 / 编号"></label><div id="asset-list" class="asset-list"></div>
       </div><button id="open-source" class="input-link">查看输入全景 ↗</button>
     </aside></main>
     <footer class="page-footer"><span>研究过程中的结果展示，保留原始布局及已知问题。</span><span>鼠标拖动旋转 · 右键平移 · 滚轮缩放 · 点击选中</span></footer>
