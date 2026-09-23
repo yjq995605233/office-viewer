@@ -19,7 +19,7 @@
       "id":"pipeline-erp4-v1", "title":"我的 Pipeline · 4 帧 ERP", "method":"多帧输入 / V1",
       "summary":"4 张 ERP / 23 个独立物体 / 待改进结果",
       "description":"first_full_scene_agent_v1 的原始场景布局。网页使用保留顶点颜色的轻量模型，保留物体编号，支持逐个检查。",
-      "notes":["已知问题：碰撞未完全消解，门尚未合理放置。","此批次仅含物体；辅助网格不代表重建的房间结构。","网页副本已减面；物体摆放未调整，不能代替原始网格做定量评估。","保留源坐标单位，米制比例尚未核实。"],
+      "notes":["已知问题：碰撞未完全消解，门尚未合理放置。","选中框为 Boxer 初始化时的有向包围盒；后续放置调整可能使模型与初始框存在偏差。","此批次仅含物体；辅助网格不代表重建的房间结构。","网页副本已减面；物体摆放未调整，不能代替原始网格做定量评估。","保留源坐标单位，米制比例尚未核实。"],
       "unitLabel":"源坐标单位", "walk":false,
       "assetManifest":"scenes/pipeline-erp4-v1/conversion-report.json",
       "inputDescription":"用户确认：office2_4 中的这 4 张 ERP 是 first_full_scene_agent_v1 的输入。",

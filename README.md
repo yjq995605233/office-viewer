@@ -27,6 +27,25 @@
 
 此仓库包含构建后的网页和展示资源，不包含原始 OBJ、Blender 工程或重建 pipeline。公开访问不代表另行授予场景数据和输入图片的再利用许可。
 
+### Boxer 初始化包围盒
+
+Pipeline 的选中框读取 `conversion-report.json` 中逐物体的 `boxerBox`，使用同一实验的 Boxer 初始化中心、尺寸和朝向，不再从减面模型计算世界轴对齐框。23 个发布模型的源 SHA256 均与 `full_scene_agent_v1/final_scene/scene_manifest.json` 一致。
+
+框保留 **boxer-init 时刻** 的预测位置和尺寸，不应用后续的落地、贴墙、支撑吸附、缩放复核或 Agent 平移。因此它可用于检查初始化预测，但不保证紧贴最终网格。尺寸按框自身的 X、Y（高）、Z 轴排列；无 Boxer 数据的场景继续显示并标注世界轴对齐包围盒。
+
+服务器上的更新命令（Python 标准库，无需运行模型推理）：
+
+```bash
+python scripts/export_boxer_bounds.py \
+  --report scenes/pipeline-erp4-v1/conversion-report.json \
+  --initialization /path/to/run/boxer_init/initialization_manifest.json \
+  --final-scene /path/to/run/full_scene_agent_v1/final_scene/scene_manifest.json
+```
+
+导出器先核对全部物体编号和源网格哈希，再写入数据；不匹配时直接报错。Boxer 的米制 Z-up 坐标按 `(x, z, -y) / meters_per_world_unit` 转为模型使用的 REST3D Y-up 坐标，尺寸重排为 `(sx, sz, sy) / meters_per_world_unit`，绕 Y 的角度与 `boxer_yaw_zup` 同号。源清单哈希记录在 `selectionBounds` 中。
+
+选中框逻辑保留为可维护模块 `assets/selection-bounds.js`；当前发布入口直接导入它，可在服务器修改后用 `python -m http.server 8000` 预览。发布仍通过 GitHub Pages 的 main 分支。
+
 ## 扩展与托管
 
 场景登记在 scenes/catalog.json。新增结果可独立配置模型、输入图、说明与已知问题；不必重写查看器。现有 files 格式加载完整 GLB，assetManifest 格式加载一组物体 GLB。
