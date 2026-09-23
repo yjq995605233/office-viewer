@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "office_2_000",
+  "method": "Fire3D",
+  "sourceRun": "office_2_000",
+  "sourceFile": "results/replicapano/office_2_000/reconstruction/office_2_000/appearance/predicted_textured_world_scene.glb",
+  "sourceSHA256": "ecc0157c68a0ca778b1afc0d9f765f6085f236f8be6f0f5ea11f1912c38fc139",
+  "sourceMetadataSHA256": "516de8b817235c0f6ffcc8b05b7deb3c371a968385039cbc4a539b2eb9183687",
+  "inputAuditSHA256": "219498def37a2285849d7a09498daed09d075a8f92b5ed2950e6f1f9b149c08a",
+  "sourceFrameIds": [
+    "00032",
+    "00066",
+    "00085",
+    "00097"
+  ],
+  "inputTangentFrames": 24,
+  "conversionSHA256": "38d8bcd93162d5f2a92315c631d66d7560b862c8e24b2fabe81cbc969ef6f053",
+  "sourceSpace": "world",
+  "sourceUpAxis": "+Z",
+  "upAxis": "+Y",
+  "sourceToViewer": [
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      -1.0,
+      0.0
+    ]
+  ],
+  "units": "source world meters",
+  "geometryAndTextureBinarySHA256": "95e11b78a83affca94b80dd329cf3b44c57c1e6ce5c7871eef26ea7a3b2ea33a",
+  "geometryAndTextures": "original GLB BIN chunk unchanged; no simplification",
+  "backgroundAssetId": "pred_0020",
+  "backgroundIdentification": "input_audit.background_room_box_prior.background_local_instance_id; not GLB node name",
+  "previewSHA256": "b4825564aaf060d271fa5f02d6f6871e715b80b4401a7a2da0be671a212bf59d",
+  "previewBytes": 81587324,
+  "assets": [
+    {
+      "id": "pred_0000",
+      "label": "预测实例 0000",
+      "sourceNode": "background_position_0000",
+      "sourceTriangles": 99874,
+      "sourceVertices": 88497
+    },
+    {
+      "id": "pred_0001",
+      "label": "预测实例 0001",
+      "sourceNode": "instance_0001_position_0001",
+      "sourceTriangles": 99553,
+      "sourceVertices": 70376
+    },
+    {
+      "id": "pred_0002",
+      "label": "预测实例 0002",
+      "sourceNode": "instance_0002_position_0002",
+      "sourceTriangles": 94434,
+      "sourceVertices": 68780
+    },
+    {
+      "id": "pred_0003",
+      "label": "预测实例 0003",
+      "sourceNode": "instance_0003_position_0003",
+      "sourceTriangles": 95410,
+      "sourceVertices": 58960
+    },
+    {
+      "id": "pred_0004",
+      "label": "预测实例 0004",
+      "sourceNode": "instance_0004_position_0004",
+      "sourceTriangles": 93881,
+      "sourceVertices": 62800
+    },
+    {
+      "id": "pred_0005",
+      "label": "预测实例 0005",
+      "sourceNode": "instance_0005_position_0005",
+      "sourceTriangles": 94159,
+      "sourceVertices": 67659
+    },
+    {
+      "id": "pred_0006",
+      "label": "预测实例 0006",
+      "sourceNode": "instance_0006_position_0006",
+      "sourceTriangles": 99299,
+      "sourceVertices": 65500
+    },
+    {
+      "id": "pred_0007",
+      "label": "预测实例 0007",
+      "sourceNode": "instance_0007_position_0007",
+      "sourceTriangles": 99307,
+      "sourceVertices": 65780
+    },
+    {
+      "id": "pred_0008",
+      "label": "预测实例 0008",
+      "sourceNode": "instance_0008_position_0008",
+      "sourceTriangles": 94195,
+      "sourceVertices": 72886
+    },
+    {
+      "id": "pred_0009",
+      "label": "预测实例 0009",
+      "sourceNode": "instance_0009_position_0009",
+      "sourceTriangles": 97702,
+      "sourceVertices": 59018
+    },
+    {
+      "id": "pred_0010",
+      "label": "预测实例 0010",
+      "sourceNode": "instance_0010_position_0010",
+      "sourceTriangles": 96773,
+      "sourceVertices": 59394
+    },
+    {
+      "id": "pred_0011",
+      "label": "预测实例 0011",
+      "sourceNode": "instance_0011_position_0011",
+      "sourceTriangles": 99058,
+      "sourceVertices": 62840
+    },
+    {
+      "id": "pred_0012",
+      "label": "预测实例 0012",
+      "sourceNode": "instance_0012_position_0012",
+      "sourceTriangles": 95622,
+      "sourceVertices": 61504
+    },
+    {
+      "id": "pred_0013",
+      "label": "预测实例 0013",
+      "sourceNode": "instance_0013_position_0013",
+      "sourceTriangles": 94132,
+      "sourceVertices": 65055
+    },
+    {
+      "id": "pred_0014",
+      "label": "预测实例 0014",
+      "sourceNode": "instance_0014_position_0014",
+      "sourceTriangles": 93750,
+      "sourceVertices": 63009
+    },
+    {
+      "id": "pred_0015",
+      "label": "预测实例 0015",
+      "sourceNode": "instance_0015_position_0015",
+      "sourceTriangles": 98639,
+      "sourceVertices": 70046
+    },
+    {
+      "id": "pred_0016",
+      "label": "预测实例 0016",
+      "sourceNode": "instance_0016_position_0016",
+      "sourceTriangles": 95420,
+      "sourceVertices": 59957
+    },
+    {
+      "id": "pred_0017",
+      "label": "预测实例 0017",
+      "sourceNode": "instance_0017_position_0017",
+      "sourceTriangles": 98256,
+      "sourceVertices": 55987
+    },
+    {
+      "id": "pred_0018",
+      "label": "预测实例 0018",
+      "sourceNode": "instance_0018_position_0018",
+      "sourceTriangles": 95888,
+      "sourceVertices": 55991
+    },
+    {
+      "id": "pred_0019",
+      "label": "预测实例 0019",
+      "sourceNode": "instance_0019_position_0019",
+      "sourceTriangles": 94449,
+      "sourceVertices": 64804
+    },
+    {
+      "id": "pred_0020",
+      "label": "房间背景 · 0020",
+      "sourceNode": "instance_0020_position_0020",
+      "sourceTriangles": 98848,
+      "sourceVertices": 62642
+    },
+    {
+      "id": "pred_0021",
+      "label": "预测实例 0021",
+      "sourceNode": "instance_0021_position_0021",
+      "sourceTriangles": 99631,
+      "sourceVertices": 67598
+    },
+    {
+      "id": "pred_0022",
+      "label": "预测实例 0022",
+      "sourceNode": "instance_0022_position_0022",
+      "sourceTriangles": 96871,
+      "sourceVertices": 66350
+    },
+    {
+      "id": "pred_0023",
+      "label": "预测实例 0023",
+      "sourceNode": "instance_0023_position_0023",
+      "sourceTriangles": 93882,
+      "sourceVertices": 75931
+    },
+    {
+      "id": "pred_0024",
+      "label": "预测实例 0024",
+      "sourceNode": "instance_0024_position_0024",
+      "sourceTriangles": 97863,
+      "sourceVertices": 79307
+    },
+    {
+      "id": "pred_0025",
+      "label": "预测实例 0025",
+      "sourceNode": "instance_0025_position_0025",
+      "sourceTriangles": 98216,
+      "sourceVertices": 64694
+    },
+    {
+      "id": "pred_0026",
+      "label": "预测实例 0026",
+      "sourceNode": "instance_0026_position_0026",
+      "sourceTriangles": 95383,
+      "sourceVertices": 58807
+    }
+  ],
+  "totals": {
+    "objectsIncludingBackground": 27,
+    "triangles": 2610495
+  }
+}

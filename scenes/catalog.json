@@ -207,6 +207,157 @@
           "label": "ERP / 帧 97"
         }
       ]
+    },
+    {
+      "id": "office2-fire3d-erp4",
+      "title": "Office2 · Fire3D · 4 帧 ERP",
+      "method": "Fire3D / 预测重建",
+      "summary": "4 张 ERP / 26 个预测物体 + 房间背景 / 原始贴图",
+      "description": "导入已完成实验的世界坐标彩色模型，保留原始几何、贴图和实例编号，可逐个选择、隐藏和聚焦。",
+      "notes": [
+        "默认隐藏整个房间背景以查看内部；关闭“剖开房间”可恢复。",
+        "输入为4 帧 ERP，分别转换为 24 张切向图；单帧与四帧实验的输入条件不同。",
+        "保留源世界坐标和尺寸，只旋转显示坐标轴；未额外执行与其他方法的配准。",
+        "选择框为网格的世界轴对齐包围盒，不是 Boxer 初始化框。"
+      ],
+      "unitLabel": "源世界米",
+      "walk": false,
+      "files": [
+        {
+          "url": "scenes/office2-fire3d-erp4/scene.glb"
+        }
+      ],
+      "cutaway": [
+        "instance_0020_position_0020"
+      ],
+      "labels": {
+        "pred_0000": "预测实例 0000",
+        "pred_0001": "预测实例 0001",
+        "pred_0002": "预测实例 0002",
+        "pred_0003": "预测实例 0003",
+        "pred_0004": "预测实例 0004",
+        "pred_0005": "预测实例 0005",
+        "pred_0006": "预测实例 0006",
+        "pred_0007": "预测实例 0007",
+        "pred_0008": "预测实例 0008",
+        "pred_0009": "预测实例 0009",
+        "pred_0010": "预测实例 0010",
+        "pred_0011": "预测实例 0011",
+        "pred_0012": "预测实例 0012",
+        "pred_0013": "预测实例 0013",
+        "pred_0014": "预测实例 0014",
+        "pred_0015": "预测实例 0015",
+        "pred_0016": "预测实例 0016",
+        "pred_0017": "预测实例 0017",
+        "pred_0018": "预测实例 0018",
+        "pred_0019": "预测实例 0019",
+        "pred_0020": "房间背景 · 0020",
+        "pred_0021": "预测实例 0021",
+        "pred_0022": "预测实例 0022",
+        "pred_0023": "预测实例 0023",
+        "pred_0024": "预测实例 0024",
+        "pred_0025": "预测实例 0025",
+        "pred_0026": "预测实例 0026"
+      },
+      "inputDescription": "由 Fire3D conversion.json 核对的输入帧：00032, 00066, 00085, 00097。",
+      "sources": [
+        {
+          "url": "scenes/pipeline-erp4-v1/32_rgb.png",
+          "label": "ERP / 帧 32"
+        },
+        {
+          "url": "scenes/pipeline-erp4-v1/66_rgb.png",
+          "label": "ERP / 帧 66"
+        },
+        {
+          "url": "scenes/pipeline-erp4-v1/85_rgb.png",
+          "label": "ERP / 帧 85"
+        },
+        {
+          "url": "scenes/pipeline-erp4-v1/97_rgb.png",
+          "label": "ERP / 帧 97"
+        }
+      ]
+    },
+    {
+      "id": "office2-fire3d-frame86",
+      "title": "Office2 · Fire3D · 单帧 86",
+      "method": "Fire3D / 预测重建",
+      "summary": "1 张 ERP / 20 个预测物体 + 房间背景 / 原始贴图",
+      "description": "导入已完成实验的世界坐标彩色模型，保留原始几何、贴图和实例编号，可逐个选择、隐藏和聚焦。",
+      "notes": [
+        "默认隐藏整个房间背景以查看内部；关闭“剖开房间”可恢复。",
+        "输入为单帧 86，分别转换为 6 张切向图；单帧与四帧实验的输入条件不同。",
+        "保留源世界坐标和尺寸，只旋转显示坐标轴；未额外执行与其他方法的配准。",
+        "选择框为网格的世界轴对齐包围盒，不是 Boxer 初始化框。"
+      ],
+      "unitLabel": "源世界米",
+      "walk": false,
+      "files": [
+        {
+          "url": "scenes/office2-fire3d-frame86/scene.glb"
+        }
+      ],
+      "cutaway": [
+        "instance_0013_position_0013"
+      ],
+      "labels": {
+        "pred_0000": "预测实例 0000",
+        "pred_0001": "预测实例 0001",
+        "pred_0002": "预测实例 0002",
+        "pred_0003": "预测实例 0003",
+        "pred_0004": "预测实例 0004",
+        "pred_0005": "预测实例 0005",
+        "pred_0006": "预测实例 0006",
+        "pred_0007": "预测实例 0007",
+        "pred_0008": "预测实例 0008",
+        "pred_0009": "预测实例 0009",
+        "pred_0010": "预测实例 0010",
+        "pred_0011": "预测实例 0011",
+        "pred_0012": "预测实例 0012",
+        "pred_0013": "房间背景 · 0013",
+        "pred_0014": "预测实例 0014",
+        "pred_0015": "预测实例 0015",
+        "pred_0017": "预测实例 0017",
+        "pred_0018": "预测实例 0018",
+        "pred_0019": "预测实例 0019",
+        "pred_0020": "预测实例 0020",
+        "pred_0021": "预测实例 0021"
+      },
+      "inputDescription": "由 Fire3D conversion.json 核对的输入帧：00086。",
+      "sources": [
+        {
+          "url": "scenes/office2-inputs/86_rgb.png",
+          "label": "ERP / 帧 86"
+        }
+      ]
+    },
+    {
+      "id": "office2-inspace-frame86",
+      "title": "Office2 · InSpace · 单帧 86（几何）",
+      "method": "InSpace / 独立物体几何",
+      "summary": "1 张 ERP / 13 个预测物体 + 房间结构 / 中性白模",
+      "description": "导入保存结果中的独立物体和 layout，保留源布局与归一化尺度。支持各物体分别选择、隐藏和聚焦。",
+      "notes": [
+        "源导出共享并覆盖 material_0.png，无法可靠恢复逐物体贴图；网页使用中性白色显示几何，不代表源结果没有纹理。",
+        "物体编号保留 000–013；007_asset_007.obj 未找到，不补造缺失物体。",
+        "默认隐藏整个 layout；关闭“剖开房间”可恢复。此版本使用独立物体输出，不叠加另外解码的 scene.obj。",
+        "保留归一化源坐标，没有推定为米，也没有与 GT 或 Pipeline 配准。",
+        "选择框为网格的世界轴对齐包围盒，不是 Boxer 初始化框。"
+      ],
+      "unitLabel": "归一化单位",
+      "walk": false,
+      "assetManifest": "scenes/office2-inspace-frame86/manifest.json",
+      "cutaway": [
+        "layout"
+      ],
+      "inputDescription": "本地结果目录为 office_2_000/00086，展示对应帧 86 的 ERP。",
+      "sources": [
+        {
+          "url": "scenes/office2-inputs/86_rgb.png",
+          "label": "ERP / 帧 86"
+        }
+      ]
     }
   ]
 }

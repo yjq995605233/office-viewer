@@ -8,7 +8,9 @@
 - Office2 · GT 独立物体（白模）：来自同场景 `Object_Mesh` 的 21 个 OBJ，支持按源文件名独立检查。
 - 单张全景 Office V2：原有场景，20 个语义资产，名义米制尺寸。
 - 我的 Pipeline / 4 帧 ERP：来自 first_full_scene_agent_v1，23 个独立物体；输入为 office2_4 的 32、66、85、97 帧。
-- 新结果仍存在物体穿插与门放置不合理的问题，按原布局展示。该批次没有房间壳体；网格是观察辅助。
+- Office2 · Fire3D：四帧 ERP 与单帧 86 两个实验，分别保留 27 / 21 个网格实例及原始贴图。
+- Office2 · InSpace：单帧 86，13 个独立物体与 layout，因源贴图覆盖问题以白模展示。
+- Pipeline 仍存在物体穿插与门放置不合理的问题，按原布局展示。该批次没有房间壳体；网格是观察辅助。
 
 ## 操作
 
@@ -25,7 +27,7 @@
 
 各结果未完成坐标与尺度配准。联动视角仅按各自场景大小同步观察方向和相对位置，不表示像素或几何对齐。
 
-新结果由约 1277 万三角面减至约 115 万面，OBJ 约 688 MiB 转为 GLB 约 33 MiB。保留原始世界坐标、实例编号与顶点颜色，重新计算法线。各物体的转换记录见 scenes/pipeline-erp4-v1/conversion-report.json。网页轻量副本用于目视检查，定量评估应使用原始网格。
+Pipeline 结果由约 1277 万三角面减至约 115 万面，OBJ 约 688 MiB 转为 GLB 约 33 MiB。保留原始世界坐标、实例编号与顶点颜色，重新计算法线。各物体的转换记录见 scenes/pipeline-erp4-v1/conversion-report.json。网页轻量副本用于目视检查，定量评估应使用原始网格。
 
 此仓库包含构建后的网页和展示资源，不包含原始 OBJ、Blender 工程或重建 pipeline。公开访问不代表另行授予场景数据和输入图片的再利用许可。
 
@@ -59,6 +61,32 @@ python scripts/export_office2_gt_objects.py \
 ```
 
 此导出器仅依赖 NumPy；完整彩色 GT 选项继续保留。独立白模与 Pipeline 的对象编号不构成一一对应关系。
+
+### Office2 Fire3D 与 InSpace
+
+新增三个本地实验结果，均可独立选择物体、隐藏和聚焦：
+
+| 结果 ID | 输入 | 导入内容 |
+| --- | --- | --- |
+| `office2-fire3d-erp4` | ERP 32、66、85、97 → 24 张切向图 | 26 个预测物体 + 房间背景，2,610,495 三角面，原始贴图 |
+| `office2-fire3d-frame86` | ERP 86 → 6 张切向图 | 20 个预测物体 + 房间背景，2,026,160 三角面，原始贴图 |
+| `office2-inspace-frame86` | ERP 86 | 13 个独立物体 + layout，892,825 三角面，中性白模 |
+
+Fire3D 来自 `results/replicapano/office_2_000{,_frame86}/reconstruction/office_2_000/appearance/predicted_textured_world_scene.glb`。GLB 的整个二进制块原样保留，没有减面或重新烘焙贴图。只添加物体选择标记，并在场景根节点增加 Z-up → Y-up 旋转。输入帧核对自 `conversion.json`；对象变换核对自 `appearance_summary.json`。默认隐藏的背景实例根据 `input_audit.json` 确认，四帧为 20，单帧为 13，不能根据源 GLB 中误导性的 `background_position_0000` 名称判断。
+
+InSpace 来自 `demo_outputs/replicapano/office_2_000/00086/meshes/assets/*.obj` 和 `layout.obj`。保留源顶点和面索引，只旋转坐标轴并生成显示法线。归一化尺度未转换为米，也未配准到 GT。源目录没有 `007_asset_007.obj`，不补造缺失结果。`scene.obj` 是整体分支单独解码的结果，不与独立物体叠加，以免重复显示；当前选项明确展示独立物体分支。
+
+InSpace 源文件带有 UV 和材质引用，**不能称为源白模**：所有资产却引用同一 `material.mtl` / `material_0.png`，原导出循环会覆盖共享贴图。无法从保存目录恢复可靠的逐物体贴图关联，因此网页使用中性材质展示几何，并明确标注这一限制。没有将最后一个物体的贴图错误地套到全部物体上。
+
+三个结果默认隐藏整个房间背景 / layout，关闭“剖开房间”可恢复。选择框为网格世界轴对齐包围盒；只有 Pipeline 选项使用 Boxer 初始化框。四帧与单帧不是相同输入条件，不应直接解释成公平定量对比。
+
+来源哈希和导入统计见各目录的 `provenance.json` / `manifest.json`。复现导入（NumPy）：
+
+```bash
+python scripts/export_office2_baselines.py \
+  --fire3d /path/to/Fire3D --inspace /path/to/inspace \
+  --replicapano /path/to/RplicaPano
+```
 
 ### Boxer 初始化包围盒
 

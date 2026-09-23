@@ -1,0 +1,381 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "office_2_000",
+  "method": "InSpace",
+  "sourceFrameIds": [
+    "00086"
+  ],
+  "sourceDirectory": "demo_outputs/replicapano/office_2_000/00086/meshes",
+  "sourceUpAxis": "+Z",
+  "upAxis": "+Y",
+  "sourceToViewer": [
+    [
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0
+    ],
+    [
+      0.0,
+      -1.0,
+      0.0
+    ]
+  ],
+  "units": "normalized source coordinates; not verified meters",
+  "geometry": "independent assets plus layout; original vertices and triangle indices, no simplification",
+  "overallScenePolicy": "scene.obj is a separate overall decoder output; not added on top of independent parts",
+  "overallSceneSHA256": "f488975f22af14e2f6b5015ad4f288756ea24cd605f7180eb553c459e1460218",
+  "missingSourceAssetIds": [
+    "007_asset_007"
+  ],
+  "displayAppearance": "neutral gray, generated normals; not a claim that the source is untextured",
+  "textureLimitation": "source assets all reference material.mtl/material_0.png; sequential Trimesh exports overwrite this shared file. Per-object texture associations cannot be recovered from this directory.",
+  "assets": [
+    {
+      "id": "layout",
+      "label": "房间结构 · layout",
+      "file": "layout.glb",
+      "sourceFile": "layout.obj",
+      "sourceSHA256": "f544488ca77d36e81f6e86db2efedf4461dda977272d7e622b8c94b8bf90e680",
+      "sourceVertices": 98419,
+      "sourceTriangles": 185451,
+      "previewTriangles": 185451,
+      "previewBytes": 4588616,
+      "previewSHA256": "fc4aa16987bf0f1af3af87fb7c1c1181b77f0d2e57fd79bc209a5115607e8d86",
+      "bounds": {
+        "min": [
+          -0.5007789731025696,
+          -0.17960615456104279,
+          -0.2731011211872101
+        ],
+        "max": [
+          0.5010333061218262,
+          0.17974868416786194,
+          0.27573162317276
+        ]
+      }
+    },
+    {
+      "id": "000_asset_000",
+      "label": "预测物体 · 000_asset_000",
+      "file": "000_asset_000.glb",
+      "sourceFile": "assets/000_asset_000.obj",
+      "sourceSHA256": "a2213872631e9e7c65558ce2ca119c89a281ed10cf9d8ff85d829650d0c79c62",
+      "sourceVertices": 61003,
+      "sourceTriangles": 95372,
+      "previewTriangles": 95372,
+      "previewBytes": 2609700,
+      "previewSHA256": "a9e707956dfdc4339a75e6377a41bf20db47ac9d4ec6983620185d9588cfec2d",
+      "bounds": {
+        "min": [
+          -0.27250272035598755,
+          -0.180462047457695,
+          -0.12087339907884598
+        ],
+        "max": [
+          -0.09847261756658554,
+          -0.1249278113245964,
+          0.04153326898813248
+        ]
+      }
+    },
+    {
+      "id": "001_asset_001",
+      "label": "预测物体 · 001_asset_001",
+      "file": "001_asset_001.glb",
+      "sourceFile": "assets/001_asset_001.obj",
+      "sourceSHA256": "4e381b37a5d307eaa9ede7ebef2a860f92d429ec47e7bfd21c12997e70913560",
+      "sourceVertices": 64383,
+      "sourceTriangles": 87184,
+      "previewTriangles": 87184,
+      "previewBytes": 2592564,
+      "previewSHA256": "b42bd414a2b588ade65ee40269b16cc7c6d61f9e53e0dffd8f2b920ed6e33e20",
+      "bounds": {
+        "min": [
+          0.34683236479759216,
+          -0.18096818029880524,
+          -0.2749563455581665
+        ],
+        "max": [
+          0.4808803200721741,
+          -0.06124107167124748,
+          -0.14178843796253204
+        ]
+      }
+    },
+    {
+      "id": "002_asset_002",
+      "label": "预测物体 · 002_asset_002",
+      "file": "002_asset_002.glb",
+      "sourceFile": "assets/002_asset_002.obj",
+      "sourceSHA256": "4b45d276d7fbb924d196163ddeff9dc9b09e93b938c7330d2fa8d487bfc14728",
+      "sourceVertices": 74796,
+      "sourceTriangles": 99366,
+      "previewTriangles": 99366,
+      "previewBytes": 2988660,
+      "previewSHA256": "ff64883c82d294b0626fe55e95cbddfad2a68ab62ee4fef9db469ef833ba57a1",
+      "bounds": {
+        "min": [
+          0.10382083058357239,
+          -0.18075807392597198,
+          -0.17442193627357483
+        ],
+        "max": [
+          0.2736251950263977,
+          -0.07158665359020233,
+          0.12687891721725464
+        ]
+      }
+    },
+    {
+      "id": "003_asset_003",
+      "label": "预测物体 · 003_asset_003",
+      "file": "003_asset_003.glb",
+      "sourceFile": "assets/003_asset_003.obj",
+      "sourceSHA256": "a39f09627fe3732127d8ea27594e5eb90c9c4067c5c3554a5ea5b81898dfdf0a",
+      "sourceVertices": 71178,
+      "sourceTriangles": 94408,
+      "previewTriangles": 94408,
+      "previewBytes": 2842332,
+      "previewSHA256": "307286d46af27402c305c7ec915c27fd2fdc217c08a6735562269cbc96a875ab",
+      "bounds": {
+        "min": [
+          -0.4605039060115814,
+          -0.1819179654121399,
+          -0.13232392072677612
+        ],
+        "max": [
+          -0.16892272233963013,
+          -0.06657622009515762,
+          0.18361914157867432
+        ]
+      }
+    },
+    {
+      "id": "004_asset_004",
+      "label": "预测物体 · 004_asset_004",
+      "file": "004_asset_004.glb",
+      "sourceFile": "assets/004_asset_004.obj",
+      "sourceSHA256": "f6cae5b54f68403b602f01e49e3d9b08e97aec19282c02679511696978db08cb",
+      "sourceVertices": 63587,
+      "sourceTriangles": 93746,
+      "previewTriangles": 93746,
+      "previewBytes": 2652204,
+      "previewSHA256": "c9148cc43f13ab7bdbb2bb3ae7ed4acea112cb22d3c531d1254668c7aaaa939b",
+      "bounds": {
+        "min": [
+          -0.10779508948326111,
+          -0.14108861982822418,
+          -0.27374815940856934
+        ],
+        "max": [
+          0.14165377616882324,
+          0.07514849305152893,
+          -0.25475895404815674
+        ]
+      }
+    },
+    {
+      "id": "005_asset_005",
+      "label": "预测物体 · 005_asset_005",
+      "file": "005_asset_005.glb",
+      "sourceFile": "assets/005_asset_005.obj",
+      "sourceSHA256": "61d2b96a2fcb9591ea15bf6355b735f54c0cb33b72e826a5de8e2ef0063b999d",
+      "sourceVertices": 65806,
+      "sourceTriangles": 92834,
+      "previewTriangles": 92834,
+      "previewBytes": 2694516,
+      "previewSHA256": "55147b1d79585110d75eb465ecdf1bcf6fe5b3621deff704ec0ca73d61c84e64",
+      "bounds": {
+        "min": [
+          -0.43677616119384766,
+          -0.1809530258178711,
+          0.06657633930444717
+        ],
+        "max": [
+          -0.058052871376276016,
+          -0.0643981471657753,
+          0.24988025426864624
+        ]
+      }
+    },
+    {
+      "id": "006_asset_006",
+      "label": "预测物体 · 006_asset_006",
+      "file": "006_asset_006.glb",
+      "sourceFile": "assets/006_asset_006.obj",
+      "sourceSHA256": "ebe886249195114bef73cc1f7e149ecce1a5a561c0224daafd6778a23c3408c6",
+      "sourceVertices": 21958,
+      "sourceTriangles": 33384,
+      "previewTriangles": 33384,
+      "previewBytes": 928760,
+      "previewSHA256": "9e7faa09ea7f18633fcd01c9dc6507615334f750f989e880bf797cc32565e970",
+      "bounds": {
+        "min": [
+          0.15767885744571686,
+          -0.1780371218919754,
+          0.03323009982705116
+        ],
+        "max": [
+          0.22993096709251404,
+          -0.08641505241394043,
+          0.11910940706729889
+        ]
+      }
+    },
+    {
+      "id": "008_asset_008",
+      "label": "预测物体 · 008_asset_008",
+      "file": "008_asset_008.glb",
+      "sourceFile": "assets/008_asset_008.obj",
+      "sourceSHA256": "299e8c309070dcd0311b667be1d33cb3a52374bac00d619f22c44324e569133a",
+      "sourceVertices": 18601,
+      "sourceTriangles": 22696,
+      "previewTriangles": 22696,
+      "previewBytes": 719940,
+      "previewSHA256": "bd933a1f033d8ee67b0d4b6c0dd1efc47ad7a97f7725bb0968e93260edcd37e8",
+      "bounds": {
+        "min": [
+          -0.06300503760576248,
+          -0.18032991886138916,
+          0.18726690113544464
+        ],
+        "max": [
+          -0.0015502599999308586,
+          -0.07140059024095535,
+          0.24651013314723969
+        ]
+      }
+    },
+    {
+      "id": "009_asset_009",
+      "label": "预测物体 · 009_asset_009",
+      "file": "009_asset_009.glb",
+      "sourceFile": "assets/009_asset_009.obj",
+      "sourceSHA256": "1268aa59857af147266103a2091ba4fc4828137c145e1b6a1fc85a8f72305050",
+      "sourceVertices": 7555,
+      "sourceTriangles": 9960,
+      "previewTriangles": 9960,
+      "previewBytes": 301992,
+      "previewSHA256": "0ce6fad6cc075629608ead2925a1027bb8153b0380cee88ad66c342aee98f6c3",
+      "bounds": {
+        "min": [
+          0.4481102526187897,
+          -0.17803385853767395,
+          0.012223940342664719
+        ],
+        "max": [
+          0.49266570806503296,
+          -0.14043842256069183,
+          0.08765506744384766
+        ]
+      }
+    },
+    {
+      "id": "010_asset_010",
+      "label": "预测物体 · 010_asset_010",
+      "file": "010_asset_010.glb",
+      "sourceFile": "assets/010_asset_010.obj",
+      "sourceSHA256": "e95a45e0d9fe18d120d6591fa74f86a4f0d3c109a189622c834eb33d784f456a",
+      "sourceVertices": 21368,
+      "sourceTriangles": 31612,
+      "previewTriangles": 31612,
+      "previewBytes": 893336,
+      "previewSHA256": "b4e8edbffdb3ed9e6bca9d7eed8d715f212ae74eeb12c471454d3ec21c37ea79",
+      "bounds": {
+        "min": [
+          0.2258923500776291,
+          -0.17628967761993408,
+          -0.08467137813568115
+        ],
+        "max": [
+          0.3022442162036896,
+          -0.08693014085292816,
+          -0.005028089974075556
+        ]
+      }
+    },
+    {
+      "id": "011_asset_011",
+      "label": "预测物体 · 011_asset_011",
+      "file": "011_asset_011.glb",
+      "sourceFile": "assets/011_asset_011.obj",
+      "sourceSHA256": "f7d6646f71e32cc61bb9a960c12d54928e234038eb0022266d95b86901fdb4b5",
+      "sourceVertices": 23374,
+      "sourceTriangles": 34000,
+      "previewTriangles": 34000,
+      "previewBytes": 970136,
+      "previewSHA256": "be62f935edcf36e95f6a0c4ae673bb14eea1aabbbad080cfa83a6a88f2982af4",
+      "bounds": {
+        "min": [
+          0.1498711109161377,
+          -0.1784173548221588,
+          -0.17035754024982452
+        ],
+        "max": [
+          0.22519250214099884,
+          -0.08709058165550232,
+          -0.08536799252033234
+        ]
+      }
+    },
+    {
+      "id": "012_asset_012",
+      "label": "预测物体 · 012_asset_012",
+      "file": "012_asset_012.glb",
+      "sourceFile": "assets/012_asset_012.obj",
+      "sourceSHA256": "671fe8bfa3c97dea5d0aa4faf47a80e79cda24d19057ff6cfc1e3b6407a163ba",
+      "sourceVertices": 4734,
+      "sourceTriangles": 5340,
+      "previewTriangles": 5340,
+      "previewBytes": 178852,
+      "previewSHA256": "5b602b50ab13bbd1aaec9fb161c76dc32b3a62a3aa473e40fba4cd33e707d770",
+      "bounds": {
+        "min": [
+          -0.12220151722431183,
+          -0.17711332440376282,
+          -0.2644692063331604
+        ],
+        "max": [
+          -0.03525783121585846,
+          -0.13919539749622345,
+          -0.22778959572315216
+        ]
+      }
+    },
+    {
+      "id": "013_asset_013",
+      "label": "预测物体 · 013_asset_013",
+      "file": "013_asset_013.glb",
+      "sourceFile": "assets/013_asset_013.obj",
+      "sourceSHA256": "fd04d8cb0ab2436076fbd45d21c409ed0dcd8ee8e50ceca486c7c929ea6ff08c",
+      "sourceVertices": 6361,
+      "sourceTriangles": 7472,
+      "previewTriangles": 7472,
+      "previewBytes": 243484,
+      "previewSHA256": "16341b0cc9197a3482322011fe337bfaf54d91e2ba42710379ad6ef8d669b9e1",
+      "bounds": {
+        "min": [
+          -0.03007712960243225,
+          -0.17717762291431427,
+          -0.26661238074302673
+        ],
+        "max": [
+          0.03743875026702881,
+          -0.13018684089183807,
+          -0.2280658632516861
+        ]
+      }
+    }
+  ],
+  "totals": {
+    "objects": 13,
+    "layouts": 1,
+    "triangles": 892825,
+    "previewBytes": 25205092
+  }
+}
