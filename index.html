@@ -1,46 +1,24 @@
 <!doctype html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="办公室三维重建的交互预览：浏览场景、进入室内漫游、检查语义物体。" />
-    <meta name="theme-color" content="#171b22" />
-    <title>Office / 01 · 三维场景探索</title>
-    <script type="module" crossorigin src="./assets/index-D4elzHJJ.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-dqFDINyt.css">
-  </head>
-  <body>
-    <div id="app">
-      <header class="topbar">
-        <a class="brand" href="./" aria-label="办公室场景首页"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3 28 10v13l-12 7L4 23V10Z M4 10l12 7 12-7M16 17v13M10 7l12 7v7" /></svg><span>SCENE STUDY <small>交互场景档案</small></span></a>
-        <span class="project-caption">单张全景 · 办公室重建</span>
-        <div class="top-meta"><span class="version">V2</span><span>预览版</span></div>
-      </header>
-      <main>
-        <aside class="sidebar">
-          <div class="scene-title"><span class="eyebrow">INDOOR / OFFICE</span><h1>Office <span>/ 01</span></h1><p>从整体布局，到物体细节。</p></div>
-          <section class="side-section"><div class="section-heading"><h2>观察视角</h2><span>01 — 03</span></div>
-            <div class="view-list"><button data-view="overview" class="view-button active"><span class="view-number">01</span><span>空间总览<small>查看完整布局</small></span><span class="view-mark">↗</span></button><button data-view="meeting" class="view-button"><span class="view-number">02</span><span>会议区<small>桌椅与展示设备</small></span><span class="view-mark">↗</span></button><button data-view="lounge" class="view-button"><span class="view-number">03</span><span>休息区<small>沙发与休闲家具</small></span><span class="view-mark">↗</span></button></div>
-          </section>
-          <section class="side-section asset-section"><div class="section-heading"><h2>场景物体</h2><span id="asset-count">20 ASSETS</span></div><div id="asset-list" class="asset-list"><p class="muted">正在读取物体…</p></div></section>
-          <button class="source-card" id="open-source"><img src="./scenes/office-v2/source.png" alt="办公室源全景图" /><span>查看原始全景 <span>↗</span></span></button>
-          <div class="sidebar-foot">名义尺度 · 非实测尺寸</div>
-        </aside>
-        <section class="workspace" aria-label="三维办公室查看器">
-          <div class="workspace-heading"><div><span class="eyebrow">EXPLORE THE SPACE</span><h2 id="view-title">空间总览</h2></div><div class="mode-switch"><button id="inspect-mode" class="active">观察</button><button id="walk-mode" disabled>进入漫游 <span>↗</span></button></div></div>
-          <div id="viewport" tabindex="0" aria-label="可交互的三维场景，拖动观察，点击选择物体">
-            <div class="viewport-top"><span class="scene-tag" id="mode-label">整体布局</span><div class="viewport-actions"><button id="reset-view" title="恢复当前视角" aria-label="恢复当前视角">↺</button><button id="fullscreen" title="全屏查看" aria-label="全屏查看">⛶</button></div></div>
-            <div id="loading" class="loading-overlay"><div class="loading-box"><span class="eyebrow">OFFICE / 01</span><h2 id="loading-title">正在载入办公室</h2><p id="loading-detail">读取模型与材质</p><div class="loading-track"><div id="loading-bar"></div></div></div></div>
-            <div id="crosshair" hidden aria-hidden="true"></div>
-            <div id="walk-hint" hidden>W A S D 移动 <span>·</span> 鼠标转向 <span>·</span> Esc 退出</div>
-            <div id="selection-card" hidden><div><span class="eyebrow">SELECTED OBJECT</span><h3 id="selection-name"></h3><p id="selection-id"></p></div><button id="close-selection" aria-label="取消选中">×</button><div class="selection-actions"><button id="focus-object">聚焦物体</button><button id="hide-object">隐藏</button></div></div>
-            <div class="viewport-bottom"><span id="interaction-hint">拖动旋转 · 滚轮缩放 · 点击物体查看</span><span class="axis-hint"><i>X</i><i>Y ↑</i><i>Z</i></span></div>
-            <div id="toast" role="status" hidden></div>
-          </div>
-          <footer class="workspace-footer"><div class="scene-facts"><span><b>20</b> 语义资产</span><span><b>3.61 × 6.67 m</b> 室内平面</span></div><button id="restore-all">恢复所有物体</button><span class="load-state" id="load-state" aria-live="polite">正在准备场景</span></footer>
-        </section>
-      </main>
-    </div>
-    <dialog id="source-dialog"><div class="dialog-heading"><div><span class="eyebrow">SOURCE PANORAMA</span><h2>原始全景图</h2></div><button id="close-source" aria-label="关闭全景图">×</button></div><img src="./scenes/office-v2/source.png" alt="作为办公室重建输入的原始全景图" /><p>全景图展开显示，边缘的拉伸来自全景投影。三维场景可从不同位置自由观察。</p></dialog>
-  </body>
-</html>
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="办公室三维场景结果对比：不同重建方法的结果、输入全景与物体检查。"><meta name="theme-color" content="#141a20"><title>Scene Study · 办公室结果对比</title>  <script type="module" crossorigin src="./assets/index-CUxCZlNt.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-D1fLQJiz.css">
+</head>
+<body>
+  <div id="app">
+    <header class="topbar"><a class="brand" href="./"><span class="brand-icon">◈</span><span>SCENE STUDY<small>三维场景研究档案</small></span></a><span class="top-caption">OFFICE / COMPARISON LAB</span><a class="repo-link" href="https://github.com/yjq995605233/office-viewer" target="_blank" rel="noopener">GitHub ↗</a></header>
+    <section class="intro"><div><p class="eyebrow">从输入，到空间</p><h1>办公室 · 结果对比</h1><p>并排观察不同方法的重建结果，回到输入图，检查每一个物体。</p></div><div class="archive-count"><strong id="scene-count">02</strong><span>场景结果<br>持续收录中</span></div></section>
+    <div class="toolbar"><div class="segmented"><button id="compare-mode" class="active" aria-pressed="true">左右对比</button><button id="single-mode" aria-pressed="false">单场景查看</button></div><label class="link-toggle"><input id="link-cameras" type="checkbox">联动视角</label><span id="comparison-note">独立视角 · 未做坐标与尺度配准</span><button id="reset-both" class="quiet">重置视角 ↺</button></div>
+    <main class="workbench"><div id="panels" class="panels"></div><aside class="inspector" aria-label="当前场景与物体检查">
+      <div class="inspector-heading"><h2>场景检查</h2><div class="panel-tabs"><button data-inspect="0" class="active" aria-label="检查 A 侧">A</button><button data-inspect="1" aria-label="检查 B 侧">B</button></div></div>
+      <div class="inspector-body"><span id="method-label" class="eyebrow"></span><h3 id="detail-title"></h3><p id="detail-description" class="description"></p><div id="issues" class="issues"></div>
+        <div class="display-options"><label><input id="show-grid" type="checkbox" checked>辅助网格</label><label><input id="show-axes" type="checkbox">世界坐标轴</label><label><input id="wireframe" type="checkbox">线框</label><label id="cutaway-option"><input id="cutaway" type="checkbox">剖开房间</label></div>
+        <p class="small-note">网格是观察辅助；X 红 · Y 绿（向上）· Z 蓝。</p>
+        <section class="selection" id="selection"><span class="eyebrow">选中物体</span><h4 id="selection-name">点击模型或下方列表</h4><code id="selection-id"></code><p id="selection-size"></p><div><button id="focus-object" disabled>聚焦</button><button id="hide-object" disabled>隐藏</button></div></section>
+        <div class="asset-heading"><h3>物体列表 <span id="asset-count"></span></h3><button id="restore-all" class="text-button">全部显示</button></div><label class="search-label"><span class="sr-only">搜索物体名称或编号</span><input type="search" id="asset-search" placeholder="搜索物体名称 / 编号"></label><div id="asset-list" class="asset-list"></div>
+      </div><button id="open-source" class="input-link">查看输入全景 ↗</button>
+    </aside></main>
+    <footer class="page-footer"><span>研究过程中的结果展示，保留原始布局及已知问题。</span><span>鼠标拖动旋转 · 右键平移 · 滚轮缩放 · 点击选中</span></footer>
+  </div>
+  <dialog id="source-dialog"><div class="dialog-heading"><div><span class="eyebrow">INPUT PANORAMAS</span><h2 id="source-title">输入全景</h2></div><button id="close-source" aria-label="关闭输入全景">×</button></div><p id="source-description"></p><div id="source-gallery"></div><p class="small-note">ERP 是展开的 360° 全景图；图像边缘的形变来自投影。</p></dialog>
+  <div id="toast" role="status" hidden></div>
+</body></html>

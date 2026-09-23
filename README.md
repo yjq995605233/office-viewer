@@ -1,24 +1,34 @@
-# Office / 01
+# Scene Study · 办公室结果对比
 
-Interactive office reconstruction viewer: scene overview, first-person walking, and inspection of 20 semantic assets.
+在线查看：[办公室三维场景对比](https://yjq995605233.github.io/office-viewer/)。
 
-## Controls
+## 当前结果
 
-- Drag to orbit; scroll to zoom.
-- Choose a view preset or select an object from the list.
-- Click Enter walkthrough: WASD / arrow keys to move, mouse to look, R to reset, Escape to exit.
-- View the source panorama with the image button.
+- 单张全景 Office V2：原有场景，20 个语义资产，名义米制尺寸。
+- 我的 Pipeline / 4 帧 ERP：来自 first_full_scene_agent_v1，23 个独立物体；输入为 office2_4 的 32、66、85、97 帧。
+- 新结果仍存在物体穿插与门放置不合理的问题，按原布局展示。该批次没有房间壳体；网格是观察辅助。
 
-Desktop Chrome or Edge is recommended for keyboard/mouse walking. Touch devices support the observation view.
+## 操作
 
-## Data
+- 左右下拉框选择结果，支持双场景对比和单场景查看。网址会保留所选结果与显示模式，可直接复制分享。
+- 拖动旋转、右键平移、滚轮缩放；点击模型或右侧列表选中、聚焦、隐藏或恢复物体。
+- A / B 切换检查侧，可开关网格、坐标轴、线框；原有场景可剖开房间。
+- 自由漫游：WASD 移动、Q / E 升降、Shift 加速、R 复位、Esc 退出。允许穿过物体，便于检查错误。
+- 原有场景另保留室内行走，采用固定视高与简化碰撞；进入行走会恢复隐藏物体。
+- 输入全景按钮查看各结果对应的 ERP 图；全屏按钮放大当前场景。
 
-This is a research visualization with inferred geometry and nominal scale, not a measured digital survey. The scene comes from export run `20260911T032046192242Z`.
+建议在桌面 Chrome 或 Edge 中使用键盘鼠标漫游。触屏支持旋转、平移与缩放，暂不支持触屏漫游。
 
-This repository contains the built website and display assets. It does not contain the original Blender project or reconstruction pipeline. Access to this public repository does not grant a separate license to reuse the scene data or source image.
+## 数据说明
 
-The viewer uses three.js 0.186.0. See THIRD_PARTY_NOTICES.txt for its MIT license.
+两个结果未完成坐标与尺度配准。联动视角仅按各自场景大小同步观察方向和相对位置，不表示像素或几何对齐。
 
-## Hosting
+新结果由约 1277 万三角面减至约 115 万面，OBJ 约 688 MiB 转为 GLB 约 33 MiB。保留原始世界坐标、实例编号与顶点颜色，重新计算法线。各物体的转换记录见 scenes/pipeline-erp4-v1/conversion-report.json。网页轻量副本用于目视检查，定量评估应使用原始网格。
 
-GitHub Pages publishes from the root of the main branch. All model, image, script and stylesheet references are relative so the viewer also works under the repository URL path.
+此仓库包含构建后的网页和展示资源，不包含原始 OBJ、Blender 工程或重建 pipeline。公开访问不代表另行授予场景数据和输入图片的再利用许可。
+
+## 扩展与托管
+
+场景登记在 scenes/catalog.json。新增结果可独立配置模型、输入图、说明与已知问题；不必重写查看器。现有 files 格式加载完整 GLB，assetManifest 格式加载一组物体 GLB。
+
+GitHub Pages 从 main 分支根目录发布，所有资源路径兼容 /office-viewer/ 子目录。界面使用 three.js 0.186.0；构建使用 Vite 8.2.2，离线减面使用 meshoptimizer 1.2.0。第三方许可证见 THIRD_PARTY_NOTICES.txt。

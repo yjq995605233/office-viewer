@@ -1,0 +1,897 @@
+{
+  "schemaVersion": 1,
+  "sourceBatch": "first_full_scene_agent_v1",
+  "format": "OBJ with vertex colors",
+  "upAxis": "+Y",
+  "units": "source world units; metric scale unverified",
+  "transforms": "original world coordinates; no placement changes",
+  "simplification": {
+    "tool": "meshoptimizer 1.2.0",
+    "targetTrianglesPerAsset": 50000,
+    "targetRelativeError": 0.01,
+    "colorWeights": [
+      0.25,
+      0.25,
+      0.25
+    ],
+    "normals": "recomputed smooth normals",
+    "colorSpace": "OBJ sRGB to linear RGB (three.js OBJLoader convention)"
+  },
+  "assets": [
+    {
+      "id": "instance_0001",
+      "label": "物体 0001",
+      "file": "instance_0001.glb",
+      "sourceSHA256": "e567276f564f2efc32f681871c17e273e07f49510374ffcaf32a8af864c9f069",
+      "sourceBytes": 83077489,
+      "originalVertices": 716430,
+      "originalTriangles": 1432924,
+      "previewVertices": 24963,
+      "previewTriangles": 50000,
+      "relativeAppearanceError": 0.0007524882676079869,
+      "originalBounds": {
+        "min": [
+          -4.122098869,
+          0,
+          3.127340005
+        ],
+        "max": [
+          -3.481708709,
+          0.51876986,
+          3.712645695
+        ]
+      },
+      "previewBounds": {
+        "min": [
+          -4.122098922729492,
+          0,
+          3.127340078353882
+        ],
+        "max": [
+          -3.4817087650299072,
+          0.5187698602676392,
+          3.7126457691192627
+        ]
+      },
+      "previewBytes": 1499932
+    },
+    {
+      "id": "instance_0002",
+      "label": "物体 0002",
+      "file": "instance_0002.glb",
+      "sourceSHA256": "a60dba893fb2cf15431fd3f268b768181a87e1f160181c4be977b236ae03a043",
+      "sourceBytes": 20491361,
+      "originalVertices": 184506,
+      "originalTriangles": 369084,
+      "previewVertices": 24963,
+      "previewTriangles": 50000,
+      "relativeAppearanceError": 0.00032823390210978687,
+      "originalBounds": {
+        "min": [
+          3.19875646,
+          4.00938272,
+          -1.08764255
+        ],
+        "max": [
+          3.52051353,
+          4.92043114,
+          -0.30854484
+        ]
+      },
+      "previewBounds": {
+        "min": [
+          3.198756456375122,
+          4.009382724761963,
+          -1.0876425504684448
+        ],
+        "max": [
+          3.5205135345458984,
+          4.920431137084961,
+          -0.3085448443889618
+        ]
+      },
+      "previewBytes": 1499948
+    },
+    {
+      "id": "instance_0003",
+      "label": "物体 0003",
+      "file": "instance_0003.glb",
+      "sourceSHA256": "ea998558efc173b652d0d4c64e0ab092592bdfcc2f62ab7d9d70c2169b9cf53d",
+      "sourceBytes": 72423025,
+      "originalVertices": 625466,
+      "originalTriangles": 1250024,
+      "previewVertices": 25427,
+      "previewTriangles": 49990,
+      "relativeAppearanceError": 0.0009610902634449303,
+      "originalBounds": {
+        "min": [
+          -3.526933251,
+          0,
+          3.217299065
+        ],
+        "max": [
+          -2.903353031,
+          0.62560546,
+          3.865404205
+        ]
+      },
+      "previewBounds": {
+        "min": [
+          -3.526933193206787,
+          0,
+          3.217298984527588
+        ],
+        "max": [
+          -2.903352975845337,
+          0.6256054639816284,
+          3.8654041290283203
+        ]
+      },
+      "previewBytes": 1516516
+    },
+    {
+      "id": "instance_0006",
+      "label": "物体 0006",
+      "file": "instance_0006.glb",
+      "sourceSHA256": "f7d6c4c8be440773fc2ee9a040da37d8f0d3b5dd7df8524a9e268c10edc5ec18",
+      "sourceBytes": 29681520,
+      "originalVertices": 266946,
+      "originalTriangles": 533800,
+      "previewVertices": 25033,
+      "previewTriangles": 50000,
+      "relativeAppearanceError": 0.0002729564148467034,
+      "originalBounds": {
+        "min": [
+          -0.01014832,
+          1.44621789,
+          0.33920065
+        ],
+        "max": [
+          0.34961703,
+          1.54501784,
+          0.79388678
+        ]
+      },
+      "previewBounds": {
+        "min": [
+          -0.010148320347070694,
+          1.4462178945541382,
+          0.3392006456851959
+        ],
+        "max": [
+          0.34961703419685364,
+          1.5450178384780884,
+          0.7938867807388306
+        ]
+      },
+      "previewBytes": 1502472
+    },
+    {
+      "id": "instance_0007",
+      "label": "物体 0007",
+      "file": "instance_0007.glb",
+      "sourceSHA256": "20395203c4c6adcc143415c1df0536d249934e841ae5ef64dee13007a5b4371f",
+      "sourceBytes": 39856532,
+      "originalVertices": 343180,
+      "originalTriangles": 686752,
+      "previewVertices": 24795,
+      "previewTriangles": 49992,
+      "relativeAppearanceError": 0.00048788991989567876,
+      "originalBounds": {
+        "min": [
+          -1.27074993,
+          1.446541887,
+          0.03131345782
+        ],
+        "max": [
+          -0.92561013,
+          1.560552337,
+          0.4069353278
+        ]
+      },
+      "previewBounds": {
+        "min": [
+          -1.2707499265670776,
+          1.4465419054031372,
+          0.031313456594944
+        ],
+        "max": [
+          -0.9256101250648499,
+          1.5605523586273193,
+          0.40693533420562744
+        ]
+      },
+      "previewBytes": 1493808
+    },
+    {
+      "id": "instance_0008",
+      "label": "物体 0008",
+      "file": "instance_0008.glb",
+      "sourceSHA256": "d45c0ee04161ef571996bd583f455353b67c71d3686b8230f2caaa7e8f6ea3f5",
+      "sourceBytes": 35656807,
+      "originalVertices": 314056,
+      "originalTriangles": 628076,
+      "previewVertices": 25018,
+      "previewTriangles": 50000,
+      "relativeAppearanceError": 0.0003354676009621471,
+      "originalBounds": {
+        "min": [
+          -3.25477576,
+          0,
+          -4.2164588
+        ],
+        "max": [
+          -2.12345362,
+          1.02094126,
+          -3.0963974
+        ]
+      },
+      "previewBounds": {
+        "min": [
+          -3.2547757625579834,
+          0,
+          -4.216458797454834
+        ],
+        "max": [
+          -2.1234536170959473,
+          1.0209412574768066,
+          -3.0963973999023438
+        ]
+      },
+      "previewBytes": 1501916
+    },
+    {
+      "id": "instance_0010",
+      "label": "物体 0010",
+      "file": "instance_0010.glb",
+      "sourceSHA256": "7f57391bdfa21491f1191d0c2e891f88bbe1960e5309ffdc8b5142c08d4366a7",
+      "sourceBytes": 29109166,
+      "originalVertices": 259788,
+      "originalTriangles": 519588,
+      "previewVertices": 24994,
+      "previewTriangles": 50000,
+      "relativeAppearanceError": 0.0002516527019906789,
+      "originalBounds": {
+        "min": [
+          2.29062819,
+          0,
+          -2.36066413
+        ],
+        "max": [
+          3.96128798,
+          1.03417563,
+          0.17389244
+        ]
+      },
+      "previewBounds": {
+        "min": [
+          2.29062819480896,
+          0,
+          -2.360664129257202
+        ],
+        "max": [
+          3.9612879753112793,
+          1.0341756343841553,
+          0.17389243841171265
+        ]
+      },
+      "previewBytes": 1501048
+    },
+    {
+      "id": "instance_0012",
+      "label": "物体 0012",
+      "file": "instance_0012.glb",
+      "sourceSHA256": "8cf6e69377c1d6381c3cb17faa102b1649b5000fe359c959d21064991a566cae",
+      "sourceBytes": 35611435,
+      "originalVertices": 316372,
+      "originalTriangles": 632744,
+      "previewVertices": 25000,
+      "previewTriangles": 50000,
+      "relativeAppearanceError": 0.00022742548026144505,
+      "originalBounds": {
+        "min": [
+          -1.36209905,
+          1.44647634,
+          0.36976394
+        ],
+        "max": [
+          -0.89662677,
+          1.5836122,
+          0.95542157
+        ]
+      },
+      "previewBounds": {
+        "min": [
+          -1.362099051475525,
+          1.4464763402938843,
+          0.36976394057273865
+        ],
+        "max": [
+          -0.8966267704963684,
+          1.5836122035980225,
+          0.9554215669631958
+        ]
+      },
+      "previewBytes": 1501284
+    },
+    {
+      "id": "instance_0013",
+      "label": "物体 0013",
+      "file": "instance_0013.glb",
+      "sourceSHA256": "21220a2b48eea63c4f15715eec465416ed4d542cffe59b041b0a7b2147d50312",
+      "sourceBytes": 11124547,
+      "originalVertices": 100212,
+      "originalTriangles": 200420,
+      "previewVertices": 25002,
+      "previewTriangles": 50000,
+      "relativeAppearanceError": 0.00007138795626815408,
+      "originalBounds": {
+        "min": [
+          -3.276341803,
+          2.408132934,
+          3.811371219
+        ],
+        "max": [
+          -2.527778208,
+          3.500245666,
+          4.123980537
+        ]
+      },
+      "previewBounds": {
+        "min": [
+          -3.2763419151306152,
+          2.408133029937744,
+          3.811371326446533
+        ],
+        "max": [
+          -2.527778148651123,
+          3.5002455711364746,
+          4.123980522155762
+        ]
+      },
+      "previewBytes": 1501352
+    },
+    {
+      "id": "instance_0014",
+      "label": "物体 0014",
+      "file": "instance_0014.glb",
+      "sourceSHA256": "95e32cd57893a91cffe04fd6f1bad1409a8adf4bfff2ff5fb634c7fa84496e2c",
+      "sourceBytes": 25134054,
+      "originalVertices": 225008,
+      "originalTriangles": 450008,
+      "previewVertices": 25004,
+      "previewTriangles": 50000,
+      "relativeAppearanceError": 0.00011619937868090346,
+      "originalBounds": {
+        "min": [
+          -1.72841477,
+          2.52908587,
+          4.36991596
+        ],
+        "max": [
+          -0.72319746,
+          3.89745855,
+          4.81743574
+        ]
+      },
+      "previewBounds": {
+        "min": [
+          -1.72841477394104,
+          2.529085874557495,
+          4.369915962219238
+        ],
+        "max": [
+          -0.7231974601745605,
+          3.897458553314209,
+          4.8174357414245605
+        ]
+      },
+      "previewBytes": 1501424
+    },
+    {
+      "id": "instance_0015",
+      "label": "物体 0015",
+      "file": "instance_0015.glb",
+      "sourceSHA256": "7799ad947eb8007cfae51f0d70573da8a036db99421fbd09f35b5fd210bcf9ce",
+      "sourceBytes": 45280347,
+      "originalVertices": 403740,
+      "originalTriangles": 807420,
+      "previewVertices": 25030,
+      "previewTriangles": 50000,
+      "relativeAppearanceError": 0.0004401235783006996,
+      "originalBounds": {
+        "min": [
+          -0.40876856,
+          0,
+          3.47656369
+        ],
+        "max": [
+          1.20500743,
+          1.76916933,
+          5.1455121
+        ]
+      },
+      "previewBounds": {
+        "min": [
+          -0.40876856446266174,
+          0,
+          3.4765636920928955
+        ],
+        "max": [
+          1.2050074338912964,
+          1.7691693305969238,
+          5.145512104034424
+        ]
+      },
+      "previewBytes": 1502344
+    },
+    {
+      "id": "instance_0016",
+      "label": "物体 0016",
+      "file": "instance_0016.glb",
+      "sourceSHA256": "fa749ba74e4b98457c9e54752d693018c7df066d2864710a7423cfe07951a838",
+      "sourceBytes": 26770537,
+      "originalVertices": 241400,
+      "originalTriangles": 482696,
+      "previewVertices": 25052,
+      "previewTriangles": 50000,
+      "relativeAppearanceError": 0.00025894350255839527,
+      "originalBounds": {
+        "min": [
+          0.21175182,
+          0,
+          0.15231825
+        ],
+        "max": [
+          1.58301604,
+          1.89569914,
+          1.42110133
+        ]
+      },
+      "previewBounds": {
+        "min": [
+          0.2117518186569214,
+          0,
+          0.15231825411319733
+        ],
+        "max": [
+          1.583016037940979,
+          1.895699143409729,
+          1.4211013317108154
+        ]
+      },
+      "previewBytes": 1503136
+    },
+    {
+      "id": "instance_0017",
+      "label": "物体 0017",
+      "file": "instance_0017.glb",
+      "sourceSHA256": "37f6c86b1cb819580b3d04ec3d20edab476df2c8a57642b5f7922101931cad3f",
+      "sourceBytes": 24127320,
+      "originalVertices": 214772,
+      "originalTriangles": 429468,
+      "previewVertices": 25038,
+      "previewTriangles": 50000,
+      "relativeAppearanceError": 0.00027293909806758165,
+      "originalBounds": {
+        "min": [
+          -2.87550879,
+          0,
+          -0.85911447
+        ],
+        "max": [
+          -1.70362329,
+          1.81569064,
+          0.39163843
+        ]
+      },
+      "previewBounds": {
+        "min": [
+          -2.8755087852478027,
+          0,
+          -0.8591144680976868
+        ],
+        "max": [
+          -1.7036232948303223,
+          1.8156906366348267,
+          0.3916384279727936
+        ]
+      },
+      "previewBytes": 1502636
+    },
+    {
+      "id": "instance_0018",
+      "label": "物体 0018",
+      "file": "instance_0018.glb",
+      "sourceSHA256": "0ce8515e0ad70e3ac380119414def21380f7d78b6e09714ca3f3071e69a90c1a",
+      "sourceBytes": 21965501,
+      "originalVertices": 197372,
+      "originalTriangles": 394752,
+      "previewVertices": 24996,
+      "previewTriangles": 50000,
+      "relativeAppearanceError": 0.0002729179977905005,
+      "originalBounds": {
+        "min": [
+          -1.64575994,
+          0,
+          0.76014841
+        ],
+        "max": [
+          -0.45753819,
+          1.76075864,
+          1.98516846
+        ]
+      },
+      "previewBounds": {
+        "min": [
+          -1.6457599401474,
+          0,
+          0.7601484060287476
+        ],
+        "max": [
+          -0.4575381875038147,
+          1.760758638381958,
+          1.98516845703125
+        ]
+      },
+      "previewBytes": 1501116
+    },
+    {
+      "id": "instance_0021",
+      "label": "物体 0021",
+      "file": "instance_0021.glb",
+      "sourceSHA256": "f1f446d84c57f5dc78a982a931754941b3ce6da8b582e28aa77818758661cfc5",
+      "sourceBytes": 43014062,
+      "originalVertices": 380870,
+      "originalTriangles": 761748,
+      "previewVertices": 24994,
+      "previewTriangles": 50000,
+      "relativeAppearanceError": 0.00021290181030053645,
+      "originalBounds": {
+        "min": [
+          -0.33640632,
+          0,
+          -5.97928905
+        ],
+        "max": [
+          2.6562109,
+          0.81318629,
+          -2.84304404
+        ]
+      },
+      "previewBounds": {
+        "min": [
+          -0.33640632033348083,
+          0,
+          -5.9792890548706055
+        ],
+        "max": [
+          2.6562108993530273,
+          0.8131862878799438,
+          -2.8430440425872803
+        ]
+      },
+      "previewBytes": 1501052
+    },
+    {
+      "id": "instance_0024",
+      "label": "物体 0024",
+      "file": "instance_0024.glb",
+      "sourceSHA256": "989baea0b7880657bb5d77a2fd58e1f8c078fa9486d638263d20293c2c37906d",
+      "sourceBytes": 6585460,
+      "originalVertices": 61218,
+      "originalTriangles": 122424,
+      "previewVertices": 25006,
+      "previewTriangles": 50000,
+      "relativeAppearanceError": 0.00004142587204114534,
+      "originalBounds": {
+        "min": [
+          -6.10225868,
+          0.66660285,
+          1.1063087
+        ],
+        "max": [
+          -5.26513529,
+          4.34473801,
+          2.51298523
+        ]
+      },
+      "previewBounds": {
+        "min": [
+          -6.102258682250977,
+          0.6666028499603271,
+          1.1063086986541748
+        ],
+        "max": [
+          -5.265135288238525,
+          4.344738006591797,
+          2.5129852294921875
+        ]
+      },
+      "previewBytes": 1501496
+    },
+    {
+      "id": "instance_0025",
+      "label": "物体 0025",
+      "file": "instance_0025.glb",
+      "sourceSHA256": "fa9f16c1d31432b397aa1b514468d0ee4e0b217329f9b05567a98be9e6bd8aa1",
+      "sourceBytes": 31521881,
+      "originalVertices": 278688,
+      "originalTriangles": 557304,
+      "previewVertices": 25036,
+      "previewTriangles": 50000,
+      "relativeAppearanceError": 0.00033429914037697017,
+      "originalBounds": {
+        "min": [
+          -1.16946924,
+          0,
+          -1.24096739
+        ],
+        "max": [
+          0.24857612,
+          1.89716208,
+          0.17709103
+        ]
+      },
+      "previewBounds": {
+        "min": [
+          -1.1694692373275757,
+          0,
+          -1.2409673929214478
+        ],
+        "max": [
+          0.2485761195421219,
+          1.8971620798110962,
+          0.17709103226661682
+        ]
+      },
+      "previewBytes": 1502564
+    },
+    {
+      "id": "instance_0026",
+      "label": "物体 0026",
+      "file": "instance_0026.glb",
+      "sourceSHA256": "ccb8bd6dc603641c2b98bd180c2c5a68884139cd865a3c6a908e34a42a74b059",
+      "sourceBytes": 31710542,
+      "originalVertices": 281176,
+      "originalTriangles": 562376,
+      "previewVertices": 24988,
+      "previewTriangles": 50000,
+      "relativeAppearanceError": 0.0002660243771970272,
+      "originalBounds": {
+        "min": [
+          -2.46555185,
+          0,
+          -9.34065151
+        ],
+        "max": [
+          4.41648149,
+          1.67203379,
+          -4.33891392
+        ]
+      },
+      "previewBounds": {
+        "min": [
+          -2.4655518531799316,
+          0,
+          -9.340651512145996
+        ],
+        "max": [
+          4.4164814949035645,
+          1.6720337867736816,
+          -4.338913917541504
+        ]
+      },
+      "previewBytes": 1500832
+    },
+    {
+      "id": "instance_0027",
+      "label": "物体 0027",
+      "file": "instance_0027.glb",
+      "sourceSHA256": "5fcf596643d7a433111014d430a7c5b753867d19d982848e4952e3f4df81725d",
+      "sourceBytes": 6125462,
+      "originalVertices": 56752,
+      "originalTriangles": 113498,
+      "previewVertices": 25003,
+      "previewTriangles": 50000,
+      "relativeAppearanceError": 0.0000371363821614068,
+      "originalBounds": {
+        "min": [
+          -5.29609156,
+          0.8140558,
+          -0.64550239
+        ],
+        "max": [
+          -4.53162718,
+          4.50872135,
+          0.8003267
+        ]
+      },
+      "previewBounds": {
+        "min": [
+          -5.296091556549072,
+          0.8140558004379272,
+          -0.6455023884773254
+        ],
+        "max": [
+          -4.531627178192139,
+          4.508721351623535,
+          0.8003267049789429
+        ]
+      },
+      "previewBytes": 1501388
+    },
+    {
+      "id": "instance_0028",
+      "label": "物体 0028",
+      "file": "instance_0028.glb",
+      "sourceSHA256": "b5ef544e1e1eb6083c0ada4c882c593a0d4e665d675e4e4f7840f9b9e21c1bce",
+      "sourceBytes": 16477963,
+      "originalVertices": 149914,
+      "originalTriangles": 299824,
+      "previewVertices": 25002,
+      "previewTriangles": 50000,
+      "relativeAppearanceError": 0.00014032801846042275,
+      "originalBounds": {
+        "min": [
+          2.22377086,
+          1.50911987,
+          -2.92745829
+        ],
+        "max": [
+          4.13726616,
+          3.49917626,
+          1.22513592
+        ]
+      },
+      "previewBounds": {
+        "min": [
+          2.2237708568573,
+          1.5091198682785034,
+          -2.9274582862854004
+        ],
+        "max": [
+          4.137266159057617,
+          3.499176263809204,
+          1.2251359224319458
+        ]
+      },
+      "previewBytes": 1501348
+    },
+    {
+      "id": "instance_0029",
+      "label": "物体 0029",
+      "file": "instance_0029.glb",
+      "sourceSHA256": "36200e3e533b2544627df9a2886ea0227dde36fed30599f0d386537289812283",
+      "sourceBytes": 17163023,
+      "originalVertices": 155536,
+      "originalTriangles": 311076,
+      "previewVertices": 24998,
+      "previewTriangles": 50000,
+      "relativeAppearanceError": 0.00011619441647781059,
+      "originalBounds": {
+        "min": [
+          -2.88100433,
+          0,
+          -1.27675474
+        ],
+        "max": [
+          1.31781518,
+          1.44559085,
+          2.22597623
+        ]
+      },
+      "previewBounds": {
+        "min": [
+          -2.8810043334960938,
+          0,
+          -1.2767547369003296
+        ],
+        "max": [
+          1.3178151845932007,
+          1.445590853691101,
+          2.2259762287139893
+        ]
+      },
+      "previewBytes": 1501192
+    },
+    {
+      "id": "instance_0030",
+      "label": "物体 0030",
+      "file": "instance_0030.glb",
+      "sourceSHA256": "36686766997956ace4412105b4c5cd60b03b5324e39fef15077a0621975bdb93",
+      "sourceBytes": 45596141,
+      "originalVertices": 403460,
+      "originalTriangles": 806912,
+      "previewVertices": 25004,
+      "previewTriangles": 50000,
+      "relativeAppearanceError": 0.00021494139218702912,
+      "originalBounds": {
+        "min": [
+          -5.5522666,
+          2.7007134,
+          0.2259997
+        ],
+        "max": [
+          -5.09397125,
+          3.01744175,
+          0.77306777
+        ]
+      },
+      "previewBounds": {
+        "min": [
+          -5.552266597747803,
+          2.7007133960723877,
+          0.22599969804286957
+        ],
+        "max": [
+          -5.093971252441406,
+          3.017441749572754,
+          0.7730677723884583
+        ]
+      },
+      "previewBytes": 1501424
+    },
+    {
+      "id": "instance_0031",
+      "label": "物体 0031",
+      "file": "instance_0031.glb",
+      "sourceSHA256": "bd4d827a5827344750c4c08ed88b9f7114da88ad15e1b5e92706e441dd1f5536",
+      "sourceBytes": 23336729,
+      "originalVertices": 209328,
+      "originalTriangles": 418656,
+      "previewVertices": 25000,
+      "previewTriangles": 50000,
+      "relativeAppearanceError": 0.00009887343912851065,
+      "originalBounds": {
+        "min": [
+          -2.65414333,
+          2.45029211,
+          3.99726987
+        ],
+        "max": [
+          -1.39715827,
+          3.43893862,
+          4.54159069
+        ]
+      },
+      "previewBounds": {
+        "min": [
+          -2.6541433334350586,
+          2.4502921104431152,
+          3.997269868850708
+        ],
+        "max": [
+          -1.3971582651138306,
+          3.438938617706299,
+          4.541590690612793
+        ]
+      },
+      "previewBytes": 1501280
+    }
+  ],
+  "sources": [
+    {
+      "file": "32_rgb.png",
+      "label": "ERP 帧 32"
+    },
+    {
+      "file": "66_rgb.png",
+      "label": "ERP 帧 66"
+    },
+    {
+      "file": "85_rgb.png",
+      "label": "ERP 帧 85"
+    },
+    {
+      "file": "97_rgb.png",
+      "label": "ERP 帧 97"
+    }
+  ],
+  "totals": {
+    "sourceBytes": 721840904,
+    "previewBytes": 34541508,
+    "originalTriangles": 12771574,
+    "previewTriangles": 1149982
+  }
+}
