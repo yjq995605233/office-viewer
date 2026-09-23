@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="办公室三维重建的交互预览：浏览场景、进入室内漫游、检查语义物体。" />
+    <meta name="theme-color" content="#171b22" />
+    <title>Office / 01 · 三维场景探索</title>
+    <script type="module" crossorigin src="./assets/index-D4elzHJJ.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-dqFDINyt.css">
+  </head>
+  <body>
+    <div id="app">
+      <header class="topbar">
+        <a class="brand" href="./" aria-label="办公室场景首页"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3 28 10v13l-12 7L4 23V10Z M4 10l12 7 12-7M16 17v13M10 7l12 7v7" /></svg><span>SCENE STUDY <small>交互场景档案</small></span></a>
+        <span class="project-caption">单张全景 · 办公室重建</span>
+        <div class="top-meta"><span class="version">V2</span><span>预览版</span></div>
+      </header>
+      <main>
+        <aside class="sidebar">
+          <div class="scene-title"><span class="eyebrow">INDOOR / OFFICE</span><h1>Office <span>/ 01</span></h1><p>从整体布局，到物体细节。</p></div>
+          <section class="side-section"><div class="section-heading"><h2>观察视角</h2><span>01 — 03</span></div>
+            <div class="view-list"><button data-view="overview" class="view-button active"><span class="view-number">01</span><span>空间总览<small>查看完整布局</small></span><span class="view-mark">↗</span></button><button data-view="meeting" class="view-button"><span class="view-number">02</span><span>会议区<small>桌椅与展示设备</small></span><span class="view-mark">↗</span></button><button data-view="lounge" class="view-button"><span class="view-number">03</span><span>休息区<small>沙发与休闲家具</small></span><span class="view-mark">↗</span></button></div>
+          </section>
+          <section class="side-section asset-section"><div class="section-heading"><h2>场景物体</h2><span id="asset-count">20 ASSETS</span></div><div id="asset-list" class="asset-list"><p class="muted">正在读取物体…</p></div></section>
+          <button class="source-card" id="open-source"><img src="./scenes/office-v2/source.png" alt="办公室源全景图" /><span>查看原始全景 <span>↗</span></span></button>
+          <div class="sidebar-foot">名义尺度 · 非实测尺寸</div>
+        </aside>
+        <section class="workspace" aria-label="三维办公室查看器">
+          <div class="workspace-heading"><div><span class="eyebrow">EXPLORE THE SPACE</span><h2 id="view-title">空间总览</h2></div><div class="mode-switch"><button id="inspect-mode" class="active">观察</button><button id="walk-mode" disabled>进入漫游 <span>↗</span></button></div></div>
+          <div id="viewport" tabindex="0" aria-label="可交互的三维场景，拖动观察，点击选择物体">
+            <div class="viewport-top"><span class="scene-tag" id="mode-label">整体布局</span><div class="viewport-actions"><button id="reset-view" title="恢复当前视角" aria-label="恢复当前视角">↺</button><button id="fullscreen" title="全屏查看" aria-label="全屏查看">⛶</button></div></div>
+            <div id="loading" class="loading-overlay"><div class="loading-box"><span class="eyebrow">OFFICE / 01</span><h2 id="loading-title">正在载入办公室</h2><p id="loading-detail">读取模型与材质</p><div class="loading-track"><div id="loading-bar"></div></div></div></div>
+            <div id="crosshair" hidden aria-hidden="true"></div>
+            <div id="walk-hint" hidden>W A S D 移动 <span>·</span> 鼠标转向 <span>·</span> Esc 退出</div>
+            <div id="selection-card" hidden><div><span class="eyebrow">SELECTED OBJECT</span><h3 id="selection-name"></h3><p id="selection-id"></p></div><button id="close-selection" aria-label="取消选中">×</button><div class="selection-actions"><button id="focus-object">聚焦物体</button><button id="hide-object">隐藏</button></div></div>
+            <div class="viewport-bottom"><span id="interaction-hint">拖动旋转 · 滚轮缩放 · 点击物体查看</span><span class="axis-hint"><i>X</i><i>Y ↑</i><i>Z</i></span></div>
+            <div id="toast" role="status" hidden></div>
+          </div>
+          <footer class="workspace-footer"><div class="scene-facts"><span><b>20</b> 语义资产</span><span><b>3.61 × 6.67 m</b> 室内平面</span></div><button id="restore-all">恢复所有物体</button><span class="load-state" id="load-state" aria-live="polite">正在准备场景</span></footer>
+        </section>
+      </main>
+    </div>
+    <dialog id="source-dialog"><div class="dialog-heading"><div><span class="eyebrow">SOURCE PANORAMA</span><h2>原始全景图</h2></div><button id="close-source" aria-label="关闭全景图">×</button></div><img src="./scenes/office-v2/source.png" alt="作为办公室重建输入的原始全景图" /><p>全景图展开显示，边缘的拉伸来自全景投影。三维场景可从不同位置自由观察。</p></dialog>
+  </body>
+</html>

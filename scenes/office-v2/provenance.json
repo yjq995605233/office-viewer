@@ -1,0 +1,10 @@
+{
+  "scene": "Office / 01",
+  "sourceRun": "20260911T032046192242Z",
+  "model": "scene.glb",
+  "image": "source.png",
+  "assetCount": 20,
+  "upAxis": "+Y",
+  "units": "nominal meters, based on assumed 1.65m camera height; not measured",
+  "alreadyAssembled": true
+}
