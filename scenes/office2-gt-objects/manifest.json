@@ -1,0 +1,595 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "office_2_000",
+  "sourceDirectory": "Object_Mesh",
+  "sourceAppearance": "XYZ vertices and triangular faces only; no colors, UVs, normals or materials",
+  "displayAppearance": "Neutral white material; generated flat normals; not measured GT color",
+  "sourceUpAxis": "+Z",
+  "upAxis": "+Y",
+  "units": "meters",
+  "sourceToViewer": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      -1,
+      0
+    ]
+  ],
+  "simplification": "none",
+  "transforms": "same coordinate rotation as complete GT; no per-object recentering or rescaling",
+  "duplicateSourceGroups": [
+    [
+      "pillow_48",
+      "sofa_44"
+    ]
+  ],
+  "duplicatePolicy": "preserve all source IDs independently",
+  "assets": [
+    {
+      "id": "chair_32",
+      "label": "椅子 32",
+      "file": "chair_32.glb",
+      "sourceFile": "chair_32.obj",
+      "sourceSHA256": "36d2b7fdebc07c9c068ea47301867c075b72ff5b2950edfc09ad1631daeae1ae",
+      "sourceBytes": 71643,
+      "sourceVertices": 1308,
+      "originalTriangles": 2492,
+      "previewTriangles": 2492,
+      "previewBytes": 180416,
+      "previewSHA256": "bb9eac67161374ab6f9bed6743a7b25c08d2dcdc7c271a4756d91b3a5afea486",
+      "degenerateTrianglesRetained": 0,
+      "bounds": {
+        "min": [
+          1.180326,
+          -0.0045,
+          -0.462168
+        ],
+        "max": [
+          1.868578,
+          1.0265,
+          0.234968
+        ]
+      }
+    },
+    {
+      "id": "chair_41",
+      "label": "椅子 41",
+      "file": "chair_41.glb",
+      "sourceFile": "chair_41.obj",
+      "sourceSHA256": "cfdf7425d481f35f293609d6603284dd25209dfd619363deacf999f192d70105",
+      "sourceBytes": 71045,
+      "sourceVertices": 1308,
+      "originalTriangles": 2492,
+      "previewTriangles": 2492,
+      "previewBytes": 180416,
+      "previewSHA256": "bcbb51cf8326f541c352fbefb6517ec7dcd6fb0056022a6fb425ca61e2212967",
+      "degenerateTrianglesRetained": 0,
+      "bounds": {
+        "min": [
+          0.595981,
+          -0.0045,
+          -1.222565
+        ],
+        "max": [
+          1.289262,
+          1.0165,
+          -0.541173
+        ]
+      }
+    },
+    {
+      "id": "chair_80",
+      "label": "椅子 80",
+      "file": "chair_80.glb",
+      "sourceFile": "chair_80.obj",
+      "sourceSHA256": "436b472af91236a79d6aeafbd9cb9966c82d8185dcffb3845655a7f643da40f2",
+      "sourceBytes": 72258,
+      "sourceVertices": 1311,
+      "originalTriangles": 2492,
+      "previewTriangles": 2492,
+      "previewBytes": 180416,
+      "previewSHA256": "d89645bfce853ed94616f36ebbd9858727c5e37e7912a0084e074dcd63e4e65f",
+      "degenerateTrianglesRetained": 0,
+      "bounds": {
+        "min": [
+          0.738538,
+          -0.0045,
+          0.383058
+        ],
+        "max": [
+          1.431684,
+          0.9965,
+          1.059044
+        ]
+      }
+    },
+    {
+      "id": "chair_90",
+      "label": "椅子 90",
+      "file": "chair_90.glb",
+      "sourceFile": "chair_90.obj",
+      "sourceSHA256": "ef1547a8d06e89dbdd1771bfcc1b032452511b42a92e8625361bed743be00351",
+      "sourceBytes": 40974,
+      "sourceVertices": 925,
+      "originalTriangles": 1184,
+      "previewTriangles": 1184,
+      "previewBytes": 86236,
+      "previewSHA256": "4c2c815e75ae5e435ba717c1784d71764ee371c83f01f2d54141fdbafa2b458e",
+      "degenerateTrianglesRetained": 0,
+      "bounds": {
+        "min": [
+          2.288096,
+          0.0175,
+          -1.891029
+        ],
+        "max": [
+          3.207257,
+          0.9313,
+          -0.971762
+        ]
+      }
+    },
+    {
+      "id": "chair_93",
+      "label": "椅子 93",
+      "file": "chair_93.glb",
+      "sourceFile": "chair_93.obj",
+      "sourceSHA256": "83225a44477a72555ff6b99421bcbce982fc9acc913da5a07445d89ea96adc9f",
+      "sourceBytes": 71692,
+      "sourceVertices": 1313,
+      "originalTriangles": 2492,
+      "previewTriangles": 2492,
+      "previewBytes": 180416,
+      "previewSHA256": "f715d2c9152ff81fe6e8c884870e125e0b235bd7e68c036c8b74f31da48c174e",
+      "degenerateTrianglesRetained": 0,
+      "bounds": {
+        "min": [
+          0.366392,
+          -0.0045,
+          -0.320557
+        ],
+        "max": [
+          1.058431,
+          1.0565,
+          0.346134
+        ]
+      }
+    },
+    {
+      "id": "door_4",
+      "label": "门 4",
+      "file": "door_4.glb",
+      "sourceFile": "door_4.obj",
+      "sourceSHA256": "554f346765af30261e5ddc602624165232d6fd4de87b88e6f7f76a61d664ffd5",
+      "sourceBytes": 3483,
+      "sourceVertices": 82,
+      "originalTriangles": 144,
+      "previewTriangles": 144,
+      "previewBytes": 11324,
+      "previewSHA256": "bd3e395a306f48a5b39e2455ca7e00040661ccf2a6f21d519ab62480e339e7ad",
+      "degenerateTrianglesRetained": 0,
+      "bounds": {
+        "min": [
+          2.2844,
+          0.0,
+          1.9489
+        ],
+        "max": [
+          3.2605,
+          2.7103,
+          2.0775
+        ]
+      }
+    },
+    {
+      "id": "picture_10",
+      "label": "装饰画 10",
+      "file": "picture_10.glb",
+      "sourceFile": "picture_10.obj",
+      "sourceSHA256": "2ea23c598d9aaf0f3793684bcff805da809c2352d3123c666b7e538f1f1c4733",
+      "sourceBytes": 322,
+      "sourceVertices": 8,
+      "originalTriangles": 12,
+      "previewTriangles": 12,
+      "previewBytes": 1848,
+      "previewSHA256": "fe894efe78a88dda088c1d450c2d59f742c68bad48b3b145d1ea842ab8707053",
+      "degenerateTrianglesRetained": 0,
+      "bounds": {
+        "min": [
+          3.257314,
+          1.384503,
+          -0.896328
+        ],
+        "max": [
+          3.27373,
+          2.043752,
+          -0.408964
+        ]
+      }
+    },
+    {
+      "id": "picture_11",
+      "label": "装饰画 11",
+      "file": "picture_11.glb",
+      "sourceFile": "picture_11.obj",
+      "sourceSHA256": "79d8da441a2819294a37af4d62e619c284c57a0498d3a9ebc5225e43aefe8921",
+      "sourceBytes": 327,
+      "sourceVertices": 8,
+      "originalTriangles": 12,
+      "previewTriangles": 12,
+      "previewBytes": 1848,
+      "previewSHA256": "383fa628b62cb40b7c1d6d0d7c6ff7bd6feba068454ad5dfe6a818a922c1c3e7",
+      "degenerateTrianglesRetained": 0,
+      "bounds": {
+        "min": [
+          3.257314,
+          1.337009,
+          -0.501332
+        ],
+        "max": [
+          3.27373,
+          1.816261,
+          0.135179
+        ]
+      }
+    },
+    {
+      "id": "picture_12",
+      "label": "装饰画 12",
+      "file": "picture_12.glb",
+      "sourceFile": "picture_12.obj",
+      "sourceSHA256": "bcd1cc25e60a944316f0763e3151536ca86d2df213047103bb868fbf55d2dbd0",
+      "sourceBytes": 330,
+      "sourceVertices": 8,
+      "originalTriangles": 12,
+      "previewTriangles": 12,
+      "previewBytes": 1844,
+      "previewSHA256": "fd9e938526c27f221a89b915688dd0b9adc26342d3fb6391463983b5daea142c",
+      "degenerateTrianglesRetained": 0,
+      "bounds": {
+        "min": [
+          3.257314,
+          1.273186,
+          0.115631
+        ],
+        "max": [
+          3.27373,
+          1.845886,
+          0.521024
+        ]
+      }
+    },
+    {
+      "id": "pillow_48",
+      "label": "抱枕 48（源文件重复）",
+      "file": "pillow_48.glb",
+      "sourceFile": "pillow_48.obj",
+      "sourceSHA256": "873b2aae32377f43b6b615047b3a2671a591fd05ffdae52bc17231d88507ece2",
+      "sourceBytes": 128422,
+      "sourceVertices": 2809,
+      "originalTriangles": 3818,
+      "previewTriangles": 3818,
+      "previewBytes": 275876,
+      "previewSHA256": "e9b770e577f02abc8d5fa2205044c7065e73ca412298cfb939edc59b5de1c103",
+      "degenerateTrianglesRetained": 0,
+      "bounds": {
+        "min": [
+          -3.5311,
+          0.0,
+          -1.3546
+        ],
+        "max": [
+          -0.8549,
+          0.8158,
+          1.9756
+        ]
+      },
+      "identicalSourceObjects": [
+        "sofa_44"
+      ]
+    },
+    {
+      "id": "sofa_44",
+      "label": "沙发 44（源文件重复）",
+      "file": "sofa_44.glb",
+      "sourceFile": "sofa_44.obj",
+      "sourceSHA256": "873b2aae32377f43b6b615047b3a2671a591fd05ffdae52bc17231d88507ece2",
+      "sourceBytes": 128422,
+      "sourceVertices": 2809,
+      "originalTriangles": 3818,
+      "previewTriangles": 3818,
+      "previewBytes": 275872,
+      "previewSHA256": "25c7dcef10fca127b95ac8f87ff51fd7d99cadd8706c200f0703763d7957d0b2",
+      "degenerateTrianglesRetained": 0,
+      "bounds": {
+        "min": [
+          -3.5311,
+          0.0,
+          -1.3546
+        ],
+        "max": [
+          -0.8549,
+          0.8158,
+          1.9756
+        ]
+      },
+      "identicalSourceObjects": [
+        "pillow_48"
+      ]
+    },
+    {
+      "id": "stool_51",
+      "label": "凳子 51",
+      "file": "stool_51.glb",
+      "sourceFile": "stool_51.obj",
+      "sourceSHA256": "336ff33249be499ad501bfeb3bf70154b837fb6aace4bdbd8f18453c09e92110",
+      "sourceBytes": 20717,
+      "sourceVertices": 551,
+      "originalTriangles": 556,
+      "previewTriangles": 556,
+      "previewBytes": 41028,
+      "previewSHA256": "7840b996e8199892bd00a983888d5ad6874e9451fdd8b2ab005d71cc262cdfc3",
+      "degenerateTrianglesRetained": 0,
+      "bounds": {
+        "min": [
+          -1.143,
+          -0.0122,
+          -1.8801
+        ],
+        "max": [
+          -0.6918,
+          0.4941,
+          -1.429
+        ]
+      }
+    },
+    {
+      "id": "stool_58",
+      "label": "凳子 58",
+      "file": "stool_58.glb",
+      "sourceFile": "stool_58.obj",
+      "sourceSHA256": "d1ad36a2f64acb9beba54732bfb4a5cb0333fc532cf2246c83ddb1e56cf2dc26",
+      "sourceBytes": 21600,
+      "sourceVertices": 551,
+      "originalTriangles": 556,
+      "previewTriangles": 556,
+      "previewBytes": 41028,
+      "previewSHA256": "e39a6e5ef308667cf2892ef7c57df3c8bfa96a89fdddff5a1c3129c09fa41a15",
+      "degenerateTrianglesRetained": 0,
+      "bounds": {
+        "min": [
+          -0.304358,
+          -0.0122,
+          -1.8801
+        ],
+        "max": [
+          0.146842,
+          0.4941,
+          -1.429
+        ]
+      }
+    },
+    {
+      "id": "stool_65",
+      "label": "凳子 65",
+      "file": "stool_65.glb",
+      "sourceFile": "stool_65.obj",
+      "sourceSHA256": "2af48b6dde6ef7d304abd9ff7ecc4717cd16c5e18d275c93a9fe0d32aa9e8e75",
+      "sourceBytes": 21850,
+      "sourceVertices": 551,
+      "originalTriangles": 556,
+      "previewTriangles": 556,
+      "previewBytes": 41028,
+      "previewSHA256": "cc6c425aac73b84fea1570d47965b62d3fada0bf24c9fdd9d8412336de7a1f10",
+      "degenerateTrianglesRetained": 0,
+      "bounds": {
+        "min": [
+          -0.713834,
+          -0.0122,
+          -1.8801
+        ],
+        "max": [
+          -0.262634,
+          0.4941,
+          -1.429
+        ]
+      }
+    },
+    {
+      "id": "table_38",
+      "label": "桌子 38",
+      "file": "table_38.glb",
+      "sourceFile": "table_38.obj",
+      "sourceSHA256": "1fdb5d6e3dcc4af41940d0a23e1da689d9da2b4a296d751fa5d465ccab28d278",
+      "sourceBytes": 13227,
+      "sourceVertices": 289,
+      "originalTriangles": 472,
+      "previewTriangles": 472,
+      "previewBytes": 34976,
+      "previewSHA256": "9d54c942298290a3ef8467c3aa71a9a4c2575fa1003719ca142b0f5dc69a2627",
+      "degenerateTrianglesRetained": 0,
+      "bounds": {
+        "min": [
+          -0.7675,
+          -0.0092,
+          1.486
+        ],
+        "max": [
+          -0.2683,
+          0.4831,
+          1.9802
+        ]
+      }
+    },
+    {
+      "id": "table_75",
+      "label": "桌子 75",
+      "file": "table_75.glb",
+      "sourceFile": "table_75.obj",
+      "sourceSHA256": "6b961c57506311a79f6255df8def2dcb5d10f8e6fe78ae9e44cd89a2ce1f3686",
+      "sourceBytes": 4067,
+      "sourceVertices": 96,
+      "originalTriangles": 108,
+      "previewTriangles": 108,
+      "previewBytes": 8760,
+      "previewSHA256": "5751797888fe4baf77e717f9452a55fe12d0a042cb36c92b02f4cbf92725bafa",
+      "degenerateTrianglesRetained": 0,
+      "bounds": {
+        "min": [
+          -2.306345,
+          0.016074,
+          -0.630759
+        ],
+        "max": [
+          -1.106405,
+          0.463302,
+          0.585756
+        ]
+      }
+    },
+    {
+      "id": "trash_can_5",
+      "label": "垃圾桶 5",
+      "file": "trash_can_5.glb",
+      "sourceFile": "trash_can_5.obj",
+      "sourceSHA256": "fed0e90d042f45963f488dba323022688d992d942e554d4b80be0a31b7fe19a0",
+      "sourceBytes": 5715,
+      "sourceVertices": 124,
+      "originalTriangles": 184,
+      "previewTriangles": 184,
+      "previewBytes": 14240,
+      "previewSHA256": "33b28c4f263b4436b1726ee9862147f7fb4115fed111913932bb4eb7d1b80df5",
+      "degenerateTrianglesRetained": 0,
+      "bounds": {
+        "min": [
+          3.068887,
+          0.010604,
+          0.66091
+        ],
+        "max": [
+          3.287207,
+          0.335644,
+          0.96147
+        ]
+      }
+    },
+    {
+      "id": "trash_can_6",
+      "label": "垃圾桶 6",
+      "file": "trash_can_6.glb",
+      "sourceFile": "trash_can_6.obj",
+      "sourceSHA256": "775adf0ae7798aafc352d01e5c4976ab1b34a81efd3d129e9d89d32d14fec1da",
+      "sourceBytes": 3419,
+      "sourceVertices": 74,
+      "originalTriangles": 112,
+      "previewTriangles": 112,
+      "previewBytes": 9052,
+      "previewSHA256": "6492fc21c780519156c34518eea7f06a9738163c4431f99860041d79094d33fb",
+      "degenerateTrianglesRetained": 0,
+      "bounds": {
+        "min": [
+          2.972022,
+          0.003789,
+          0.373365
+        ],
+        "max": [
+          3.287522,
+          0.374789,
+          0.690065
+        ]
+      }
+    },
+    {
+      "id": "tv_3",
+      "label": "电视 3",
+      "file": "tv_3.glb",
+      "sourceFile": "tv_3.obj",
+      "sourceSHA256": "354372c3f6387dd0183d91514021c566b015963b3856fda7eab94108f22a13fb",
+      "sourceBytes": 9162,
+      "sourceVertices": 282,
+      "originalTriangles": 194,
+      "previewTriangles": 194,
+      "previewBytes": 14940,
+      "previewSHA256": "9d3b98eecabbfc6d01fbdc92521d16399f208744fb6652688a88b2578175e141",
+      "degenerateTrianglesRetained": 0,
+      "bounds": {
+        "min": [
+          -1.6045,
+          0.7508,
+          -1.8722
+        ],
+        "max": [
+          0.9356,
+          1.8508,
+          -1.6827
+        ]
+      }
+    },
+    {
+      "id": "wall_clock_3",
+      "label": "挂钟 3",
+      "file": "wall_clock_3.glb",
+      "sourceFile": "wall_clock_3.obj",
+      "sourceSHA256": "847196cb1d131604006d0593325d2fe8d99f1e5a83c32da2cbabd53b32879d78",
+      "sourceBytes": 4110,
+      "sourceVertices": 88,
+      "originalTriangles": 140,
+      "previewTriangles": 140,
+      "previewBytes": 11076,
+      "previewSHA256": "acfc040aee9e09d5534da71f704adc399db81e198763e25444e6137beb66d614",
+      "degenerateTrianglesRetained": 0,
+      "bounds": {
+        "min": [
+          -0.514976,
+          2.203893,
+          -1.865737
+        ],
+        "max": [
+          -0.175896,
+          2.542973,
+          -1.837709
+        ]
+      }
+    },
+    {
+      "id": "window_3",
+      "label": "窗 3",
+      "file": "window_3.glb",
+      "sourceFile": "window_3.obj",
+      "sourceSHA256": "36f5525bd2dfc410b48f5e0fc02b51fab7a6fd07db27792849ceba3ea0fe6520",
+      "sourceBytes": 4313,
+      "sourceVertices": 140,
+      "originalTriangles": 90,
+      "previewTriangles": 90,
+      "previewBytes": 7444,
+      "previewSHA256": "f3180274b83c1d15d60c254daa1ca292b66e6928dd42d279798eb23da28d4727",
+      "degenerateTrianglesRetained": 0,
+      "bounds": {
+        "min": [
+          1.2483,
+          0.0,
+          2.0048
+        ],
+        "max": [
+          2.2844,
+          2.7103,
+          2.0775
+        ]
+      }
+    }
+  ],
+  "totals": {
+    "objects": 21,
+    "triangles": 21936,
+    "previewBytes": 1600084
+  }
+}

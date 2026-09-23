@@ -5,6 +5,7 @@
 ## 当前结果
 
 - Office2 · GT：ReplicaPano `office_2_000` 完整彩色网格，原始米制尺度；默认与 Pipeline 并排显示。
+- Office2 · GT 独立物体（白模）：来自同场景 `Object_Mesh` 的 21 个 OBJ，支持按源文件名独立检查。
 - 单张全景 Office V2：原有场景，20 个语义资产，名义米制尺寸。
 - 我的 Pipeline / 4 帧 ERP：来自 first_full_scene_agent_v1，23 个独立物体；输入为 office2_4 的 32、66、85、97 帧。
 - 新结果仍存在物体穿插与门放置不合理的问题，按原布局展示。该批次没有房间壳体；网格是观察辅助。
@@ -42,6 +43,22 @@ python scripts/export_office2_gt.py \
   --source /path/to/office_2_aligned.ply \
   --output scenes/office2-gt
 ```
+
+### Office2 GT 独立物体
+
+另一个结果 `office2-gt-objects` 逐文件读取 `Object_Mesh/*.obj`，共 21 个独立对象、21,936 个三角面，网页资源约 1.6 MB。所有 OBJ 仅有 XYZ 顶点和三角面，没有颜色、UV、法线、纹理或材质定义，因此以统一中性白色材质展示；法线仅为显示而生成。没有从彩色扫描中投射颜色，也没有补造目录缺少的对象。
+
+每个 GLB 保留源文件名作为实例 ID，并保留原始三角面、位置和米制尺寸；与完整 GT 使用相同的 `(x, y, z) → (x, z, -y)` 旋转，不单独居中或缩放物体。可逐一选择、聚焦、隐藏和恢复，选择框为该物体网格的世界轴对齐包围盒。
+
+源目录中的 `pillow_48.obj` 和 `sofa_44.obj` **SHA256 完全相同**。网页保留两个可独立操作的条目，标注“源文件重复”；不会把重复的沙发网格解释成真实抱枕。原始文件哈希、几何统计及重复记录见 `scenes/office2-gt-objects/manifest.json`。
+
+```bash
+python scripts/export_office2_gt_objects.py \
+  --source /path/to/office_2_000/Object_Mesh \
+  --output scenes/office2-gt-objects
+```
+
+此导出器仅依赖 NumPy；完整彩色 GT 选项继续保留。独立白模与 Pipeline 的对象编号不构成一一对应关系。
 
 ### Boxer 初始化包围盒
 

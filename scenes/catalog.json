@@ -172,6 +172,41 @@
           "label": "ERP / 帧 97"
         }
       ]
+    },
+    {
+      "id": "office2-gt-objects",
+      "title": "Office2 · GT 独立物体（白模）",
+      "method": "ReplicaPano / Object_Mesh",
+      "summary": "21 个独立 OBJ / 白模 / 原始米制尺度",
+      "description": "逐文件导入 Object_Mesh 的 21 个物体，保留文件名、原始位置与尺寸。点击模型或列表可分别选中、隐藏和聚焦。",
+      "notes": [
+        "源 OBJ 只有顶点和三角面，没有颜色、UV 或材质；网页统一使用中性白色展示材质。",
+        "这是 Object_Mesh 版本，与完整彩色 GT 扫描网格不同；不额外补齐目录中缺失的物体或房间结构。",
+        "源文件 pillow_48.obj 与 sofa_44.obj 完全相同，保留为两个独立条目并标注重复。",
+        "与完整 GT 使用相同的米制坐标；与 Pipeline 尚未完成配准。"
+      ],
+      "unitLabel": "米",
+      "walk": false,
+      "assetManifest": "scenes/office2-gt-objects/manifest.json",
+      "inputDescription": "同一 office_2_000 场景的 GT 全景图。独立物体模型来自该场景的 Object_Mesh 目录。",
+      "sources": [
+        {
+          "url": "scenes/pipeline-erp4-v1/32_rgb.png",
+          "label": "ERP / 帧 32"
+        },
+        {
+          "url": "scenes/pipeline-erp4-v1/66_rgb.png",
+          "label": "ERP / 帧 66"
+        },
+        {
+          "url": "scenes/pipeline-erp4-v1/85_rgb.png",
+          "label": "ERP / 帧 85"
+        },
+        {
+          "url": "scenes/pipeline-erp4-v1/97_rgb.png",
+          "label": "ERP / 帧 97"
+        }
+      ]
     }
   ]
 }
