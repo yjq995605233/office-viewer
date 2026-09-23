@@ -46,6 +46,8 @@ python scripts/export_boxer_bounds.py \
 
 选中框逻辑保留为可维护模块 `assets/selection-bounds.js`；当前发布入口直接导入它，可在服务器修改后用 `python -m http.server 8000` 预览。发布仍通过 GitHub Pages 的 main 分支。
 
+场景目录和物体清单使用版本化请求并在加载时重新验证缓存，避免新代码读取旧清单。声明 `selectionBounds: "boxer-init"` 的场景必须具备全部物体的有效 Boxer 数据，否则显示加载错误，不能静默退回世界轴对齐框。没有这一声明的原有场景仍可使用轴对齐框。
+
 ## 扩展与托管
 
 场景登记在 scenes/catalog.json。新增结果可独立配置模型、输入图、说明与已知问题；不必重写查看器。现有 files 格式加载完整 GLB，assetManifest 格式加载一组物体 GLB。
